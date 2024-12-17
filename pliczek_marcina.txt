@@ -1,3 +1,7 @@
 pisze sobie tutaj marcinowy kod
 marcin pisze dalej
+<<<<<<< Updated upstream
 marcin kolejna linijka
+=======
+hhahahhahhahahha
+>>>>>>> Stashed changes
