@@ -1,8 +1,22 @@
-# test
-test
-byłam tu :) {fajnie marcin dopisuje swoje marcin pisze dalej swoje w}
-uauauaa
 
-{czy wiesz że tu zrobiłem zmiany}
-TODO: basia wpisz tutaj dzisiejszą datę
-today()
+# Praca kilkuosobowa na github
+
+
+### Dodawanie do repozytorium
+```
+git add .
+git commit -m "opis zmiany"
+git push
+```
+
+### Co zrobić przy konflikcie przy dodawaniu
+```
+git pull --no-rebase
+```
+rozwiązać problemy w plikach
+
+```
+git add .
+git commit -m "opis rozwiazania konfliktu"
+git push
+```
