@@ -2,9 +2,7 @@
 test
 byłam tu :) {fajnie marcin dopisuje swoje marcin pisze dalej swoje w}
 uauauaa
-
-{czy wiesz że tu zrobiłem zmiany}
-TODO: basia wpisz tutaj dzisiejszą datęd
+today()
 
 # Instrukcja dodawania
 git add .
@@ -15,3 +13,4 @@ git push
 git pull --no-rebase
 - rozwiązać zmiany
 I CO TERAZ?
+
