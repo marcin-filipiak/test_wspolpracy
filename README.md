@@ -1,16 +1,22 @@
-# test
-test
-byłam tu :) {fajnie marcin dopisuje swoje marcin pisze dalej swoje w}
-uauauaa
-today()
 
-# Instrukcja dodawania
+# Praca kilkuosobowa na github
+
+
+### Dodawanie do repozytorium
+```
 git add .
 git commit -m "opis zmiany"
 git push
+```
 
-# Co zrobić przy konflikcie
+### Co zrobić przy konflikcie przy dodawaniu
+```
 git pull --no-rebase
-- rozwiązać zmiany
-I CO TERAZ?
+```
+rozwiązać problemy w plikach
 
+```
+git add .
+git commit -m "opis rozwiazania konfliktu"
+git push
+```
