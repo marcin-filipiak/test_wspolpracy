@@ -5,3 +5,4 @@ uauauaa
 
 {czy wiesz że tu zrobiłem zmiany}
 TODO: basia wpisz tutaj dzisiejszą datę
+today()
