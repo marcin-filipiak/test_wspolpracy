@@ -3,3 +3,5 @@
 3.marcin kolejna linijka
 4.{tu ma być od basi}
 5.a tu dalej moje
+6.marcin dopisuje
+7.moje dalej
