@@ -1,3 +1,5 @@
-pisze sobie tutaj marcinowy kod
-marcin pisze dalej
-marcin kolejna linijka
+1.pisze sobie tutaj marcinowy kod
+2.marcin pisze dalej
+3.marcin kolejna linijka
+4.{tu ma być od basi}
+5.a tu dalej moje
