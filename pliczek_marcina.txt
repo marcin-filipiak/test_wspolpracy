@@ -1,12 +1,3 @@
-1.pisze sobie tutaj marcinowy kod
-2.marcin pisze dalej
-3.marcin kolejna linijka
-4.hhahahhahhahahha
-    a1) pip
-    a2) pip pip
-    a3) pip pip pip
-5.a tu dalej moje
-6.marcin dopisuje
-7.moje dalej
-
 inna zmiana po dodaniu screenow
+
+dokonuje zmian inna osoba
