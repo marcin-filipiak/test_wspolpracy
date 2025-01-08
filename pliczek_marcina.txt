@@ -1,5 +1,7 @@
 inna zmiana po dodaniu screenow
 
+wpisuje kolejną linię
+
 dokonuje zmian inna osoba
 
 NIE WIEM ŻE ZASZŁA ZMIANA, NIE ROBIŁEM PULL
