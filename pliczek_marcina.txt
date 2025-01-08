@@ -1,2 +1,5 @@
 PIERWSZA LINIA WINDOWS
 NOWA LINIA WINDOWS
+
+linijka z laptopa
+
