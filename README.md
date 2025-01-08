@@ -2,7 +2,7 @@
 
 | Data       | Zadanie                                                                        |
 |------------|--------------------------------------------------------------------------------|
-| 8.1.2025   | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze |
+| 8.1.2025   | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze, plik zawiera numer z dziennika |
 
 
 
