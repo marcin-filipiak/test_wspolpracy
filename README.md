@@ -1,10 +1,13 @@
 # ZADANIA DLA 4TP
 
+Tutaj będą pojawiały się zadania. Data zadania jest dniem w którym zostało ono wpisane, czas na realizację wynosi 6 dni.
+
 | Data       | Zadanie                                                                        |
 |------------|--------------------------------------------------------------------------------|
 | 8.1.2025   | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze, plik zawiera numer z dziennika |
 
 
+---
 
 # Praca kilkuosobowa na github - LINUX
 
