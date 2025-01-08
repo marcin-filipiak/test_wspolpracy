@@ -5,3 +5,4 @@ wpisuje kolejną linię
 dokonuje zmian inna osoba
 
 NIE WIEM ŻE ZASZŁA ZMIANA I NIE ROBIŁEM PULL
+
