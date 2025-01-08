@@ -1,3 +1,5 @@
 inna zmiana po dodaniu screenow
 
 dokonuje zmian inna osoba
+
+NIE WIEM ŻE ZASZŁA ZMIANA, NIE ROBIŁEM PULL
