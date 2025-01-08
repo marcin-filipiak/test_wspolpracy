@@ -2,6 +2,7 @@ PIERWSZA LINIA WINDOWS
 NOWA LINIA WINDOWS
 NASTĘPNA LINIA WINDOWS
 4 Z WINDOWS
+5 Z WINSOWS
 
 linijka z laptopa
 kolejna linijka z laptopa
