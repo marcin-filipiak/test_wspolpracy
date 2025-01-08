@@ -4,5 +4,5 @@ wpisuje kolejną linię
 
 dokonuje zmian inna osoba
 
-zmiana z laptopa
+kolejna zmiana z laptopa
 
