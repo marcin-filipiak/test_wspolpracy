@@ -6,7 +6,7 @@ PS. wiele środowisk programistycznych ma wbudowaną obsługę github, zachęcam
 
 | Data       | Zadanie                                                                        |
 |------------|--------------------------------------------------------------------------------|
-| 8.1.2025   | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze, plik zawiera numer z dziennika |
+| 8.1.2025   | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze, plik zawiera numer z dziennika. Pomocny może być ![podręcznik](github_klient.pdf)  |
 
 
 ---
