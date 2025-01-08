@@ -1,4 +1,12 @@
-# Praca kilkuosobowa na github
+# ZADANIA DLA 4TP
+
+| Data       | Zadanie                                                                        |
+|------------|--------------------------------------------------------------------------------|
+| 8.1.2025   | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze |
+
+
+
+# Praca kilkuosobowa na github - LINUX
 
 ### Dodawanie do repozytorium 
 
