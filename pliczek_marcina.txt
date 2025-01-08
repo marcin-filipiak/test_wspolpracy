@@ -1,11 +1,9 @@
 PIERWSZA LINIA WINDOWS
 NOWA LINIA WINDOWS
 NASTĘPNA LINIA WINDOWS
-
-tutaj daję z laptopa
-
 4 Z WINDOWS
 5 Z WINSOWS
+6 Z WIN
 
 linijka z laptopa
 kolejna linijka z laptopa
