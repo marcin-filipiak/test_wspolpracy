@@ -7,4 +7,4 @@ Zadbajcie proszę o to, by zrzuty ekranu nie były u wszystkich takie same ;-p
 |------------|------------|-------------------|
 | 13.1.2025  | 14:35      |   nie mam ;-)     |
 | 13.1.2025  | 16:15      |   10              |
-
+| 13.1.2025  | 16.25      |   03              |
