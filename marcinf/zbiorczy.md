@@ -1,5 +1,7 @@
 Proszę o dokonanie wpisu z datą i godziną w tabelce. Mój wpis jest jako pierwszy.
-Prawdopodobnie będziecie mieli jakiś konflikt w tym pliku. Proszę o zrobienie zrzutu ekranu i umieszczenie go w swoim folderze na tym repozytorium.
+Prawdopodobnie będziecie mieli jakiś konflikt z tym plikiem. Proszę o zrobienie zrzutu ekranu i umieszczenie go w swoim folderze na tym repozytorium.
+Jeśli będzie konflikt to zrzut ekranu jaki to konflikt, jeśli brak konfliktu - zrzut ekranu podsumowania udanego pusha.
+Zadbajcie proszę o to, by zrzuty ekranu nie były u wszystkich takie same ;-p 
 
 | Data wpisu | godzina    | numer w dzienniku |
 |------------|------------|-------------------|
