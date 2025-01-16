@@ -10,3 +10,4 @@ Zadbajcie proszę o to, by zrzuty ekranu nie były u wszystkich takie same ;-p
 | 13.1.2025  | 16.25      |   03              |
 | 15.1.2025  | 17.15      |   16              |
 | 15.1.2025  | 22.10      |   25              |
+| 16.1.2025  | 07.40      |   23              |
