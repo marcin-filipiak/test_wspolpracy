@@ -17,3 +17,4 @@ Zadbajcie proszę o to, by zrzuty ekranu nie były u wszystkich takie same ;-p
 | 18.1.2025  | 18:35   | 18                |
 | 18.1.2025  | 19:59   | 8                 |
 | 18.1.2025  | 20:19   | 5                 |
+| 19.1.2025  | 00:52   | 24                |
