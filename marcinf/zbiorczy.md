@@ -22,3 +22,4 @@ Zadbajcie proszę o to, by zrzuty ekranu nie były u wszystkich takie same ;-p
 | 19.1.2025  | 17:09   | 15                |
 | 19.1.2025  | 18:20   | 13                |
 | 19.1.2025  | 20:20   | 1                 |
+| 19.1.2025  | 21:08   | 22                |
