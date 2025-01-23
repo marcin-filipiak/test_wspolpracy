@@ -8,6 +8,7 @@ PS. wiele środowisk programistycznych ma wbudowaną obsługę github, zachęcam
 |--------------|-----------|--------------------------------------------------------------------------------|
 | 8.1.2025     | 13.1.2025 | Instalacja klienta GitHub, utworzenie własnego folderu z plikiem README.md w folderze, plik zawiera numer z dziennika. Pomocny może być ![podręcznik](github_klient.pdf)  |
 | 15.1.2025    | 18.1.2025 | Proszę o znalezienie pliku który dodałem dnia 13.1.2025 w którym znajduje się treść zadania do wykonania |
+| 23.1.2025    | 23.1.2025 | Grupa 2 wysyła do swojego folderu plik lodka.md z dokumentacją programu symulującego ruch jachtu |
 
 
 ---
