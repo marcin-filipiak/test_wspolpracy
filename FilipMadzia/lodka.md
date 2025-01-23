@@ -5,7 +5,7 @@
 - [Informacje ogólne](#informacje-ogólne)
 - [Założenia aplikacji](#założenia-aplikacji)
 - [Technologie](#technologie)
-- [Przypadki użycia](#przypadki-użycia")
+- [Przypadki użycia](#przypadki-użycia)
 - [Instalacja](#instalacja)
 
 ## Informacje ogólne
