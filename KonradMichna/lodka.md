@@ -31,7 +31,7 @@ Gra mobilna w technologii .NET MAUI, która symuluje sterowanie łódką. Użytk
 - **Technologia:** .NET MAUI
 - **Język programowania:** C#
 - **Platformy docelowe:** Android, iOS, Windows
-- **Sterowanie:** Obsługa strzałek klawiatury i dotykowego sterowania na ekranie.
+- **Sterowanie:** Obsługa strzałek klawiatury
 
 ---
 
