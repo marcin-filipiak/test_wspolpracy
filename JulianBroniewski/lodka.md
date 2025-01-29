@@ -40,7 +40,7 @@ Moduł odpowiada za wyświetlenie na interfejsie użytkownika informacji na tema
 | -------------- | --------------------------- |
 | AKTOR          | Osoba używająca aplikacji.  |
 | CEL            | Użytkownik chce ustawić łódkę w symulacji tak, aby płynęła z wiatrem, przy wietrze o kierunku 270°. |
-| PRZEBIEG       | 1. Użytkownik otwiera aplikację. <br> 2. Aplikacja losuje kierunek wiatru na 270°. <br> 3. Aplikacja wyświetla interfejs. <br> 4. Użytkownik klika w przycisk, aby skręcić w prawo. <br> 5. Aplikacja obraca łódkę w prawo. <br> 6. Łódka jest ustawiona tyłem do wiatru, płynie więc szybciej. |
+| PRZEBIEG       | 1. Użytkownik otwiera aplikację. <br> 2. Aplikacja losuje kierunek wiatru na 270°. <br> 3. Aplikacja wyświetla interfejs. <br> 4. Użytkownik klika przyciski, aby obrócić łódkę w pożądanym kierunku. <br> 5. Aplikacja obraca łódkę w kierunku, jaki nadał użytkownik. <br> 6. Kiedy łódka jest ustawiona tyłem do wiatru, płynie szybciej. <br> 7. Im szybciej płynie łódka, tym większy posiada promień skrętu |
 
 Tab.1.
 
@@ -48,7 +48,7 @@ Tab.1.
 | -------------- | --------------------------- |
 | AKTOR          | Osoba używająca aplikacji.  |
 | CEL            | Użytkownik chce ustawić łódkę w symulacji tak, aby płynęła pod wiatr, przy wietrze o kierunku 270°. |
-| PRZEBIEG       | 1. Użytkownik otwiera aplikację. <br> 2. Aplikacja losuje kierunek wiatru na 270°. <br> 3. Aplikacja wyświetla interfejs. <br> 4. Użytkownik klika w przycisk, aby skręcić w lewo. <br> 5. Aplikacja obraca łódkę w lewo. <br> 6. Łódka jest ustawiona pod wiatr, więc zwalnia. |
+| PRZEBIEG       | 1. Użytkownik otwiera aplikację. <br> 2. Aplikacja losuje kierunek wiatru na 270°. <br> 3. Aplikacja wyświetla interfejs. <br> 4. Użytkownik klika przyciski, aby obrócić łódkę w pożądanym kierunku. <br> 5. Aplikacja obraca łódkę w kierunku, jaki nadał użytkownik. <br> 6. Kiedy łódka jest ustawiona pod wiatr, zwalnia. <br> 7. Po pewnym czasie łódka zatrzymuje się. Użytkownik nadal jest w stanie nią obracać, nie może ona jednak nabrać prędkości, dopóki jest skierowana w tzw. kącie martwym. |
 
 Tab.1.
 
