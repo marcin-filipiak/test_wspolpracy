@@ -95,7 +95,9 @@ Nowy kąt nachylenia łódki.
 
 ### 6.1. Losowanie kierunku wiatru
 **Aktor:** Użytkownik
+
 **Opis:** Po uruchomieniu aplikacji losowany jest kierunek wiatru. 
+
 **Przebieg działania:**
 - Użytkownik odpala aplikację.
 - Losowany jest kierunek.
@@ -104,7 +106,9 @@ Nowy kąt nachylenia łódki.
 
 ### 6.2. Sterowanie łódką 
 **Aktor:** Użytkownik
+
 **Opis:** Po kliknięciu przycisku strzałki łódka odwraca się o 15° w danym kierunku (lewo/prawo). 
+
 **Przebieg działania:**
 1. Obrót w lewo: 
 - Użytkownik naciska przycisk strzałki w lewo.
@@ -119,7 +123,9 @@ Nowy kąt nachylenia łódki.
 
 ### 6.3. Zmiana prędkości łódki
 **Aktor:** Użytkownik
+
 **Opis:** Użytkownik obserwuje zmieniającą się prędkość łódki w zależności od kierunku wiatru oraz jej kątu nachylenia.
+
 **Przebieg działania:**
 - Użykownik za pomocą przycisków strzałek steruje łódką.
 - Prędkość łódki jest obliczana w czasie rzeczywistym.
