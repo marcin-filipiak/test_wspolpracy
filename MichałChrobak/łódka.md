@@ -53,7 +53,7 @@ Powiadomienie modułu A o zaistniałych zmianach.
 1. Moduł B wysyła sygnał do modułu C z informacją o wcviśnięciu przycisku do skrętu w prawo.
 1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A.
 1. Moduł A wyświetla zmiany w stanie gry.
-2. 
+   
 ### Przypadek 2: Wciśnięcie przez użytkownika przycisku do skrętu w lewo.
 **Aktorzy:**
 - Użytkownik systemu
