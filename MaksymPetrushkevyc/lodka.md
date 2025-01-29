@@ -22,8 +22,6 @@ Aplikacja "Łódka" to symulacja interaktywnego żeglowania, w której użytkown
 
 ## Technologie użyte w aplikacji
 - **.NET MAUI** – platforma do tworzenia aplikacji mobilnych.
-- **C#** – język programowania aplikacji.
-- **XAML** – do budowania interfejsu użytkownika.
 
 ## Instalacja i uruchomienie
 Aby zainstalować aplikację, wykonaj następujące kroki:
