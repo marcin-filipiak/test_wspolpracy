@@ -13,6 +13,7 @@ Opis:
 - klasa do obsługi obiektu zawierająca pola takie jak wielkość, pozycja, obrót
 - Funkcje do przesuwania obiektów po canvasie
 ## 4.2 Moduł wiatru
+Opis:
 - klasa wiatru
 - zmieniające się w czasie rzeczywistym warunki wiatru
 - możliwośc dostosowania warunków wiatru przez użytkownika
