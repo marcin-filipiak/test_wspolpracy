@@ -2,12 +2,12 @@
 
 
 ## 1. **Opis projektu**
-Aplikacja mobilna w technologii .NET MAUI, która symuluje sterowanie statkiem z uwzględnieniem losowego kierunku wiatru. Prędkość dostosowywana jest do kierunku w którym płynie łódka.
+Aplikacja mobilna w technologii .NET MAUI, która symuluje sterowanie statkiem ```jachtem żaglowym``` z uwzględnieniem losowego kierunku wiatru. Prędkość dostosowywana jest do kierunku w którym płynie łódka. ```czy jachty pływają szybciej na północ?```
 
 ---
 
 ## 2. **Wymagania funkcjonalne**
-- Wyświetlenie planszy 800x600px
+- Wyświetlenie planszy 800x600px ```planszy?```
 - Sterowanie statkiem poprzez obracanie go w lewo i w prawo.
 - Losowy kierunek wiatru oraz jego prędkość.
 - Dynamiczne reakcje statku na kierunek wiatru (zmiana prędkości w zależności w jakim kierunku do wiatru płynie użytkownik.
@@ -25,18 +25,19 @@ Aplikacja mobilna w technologii .NET MAUI, która symuluje sterowanie statkiem z
 ## 4. **Mechanika gry**
 1. **Sterowanie:**
    - Użytkownik steruje statkiem, obracając go w lewo lub w prawo za pomocą przycisków umieszczonych na dole aplikacji.
-   - Zmiana kierunku równa się również zmianie prędkości (inne ustawienie statku do wiatru).
+   - Zmiana kierunku równa się również zmianie prędkości (inne ustawienie statku do wiatru). ```brak informacji jak opbliczać```
    
 2. **Mechanika wiatru:**
-   - Kierunek Wiatru zostaje wylosowany podczas uruchomienia aplikacji.
-   - Kierunek Wiatru wpływa na prędkość statku (dodatnio gdy płynie się "z wiatrem" i ujemnie gdy płynie się "pod wiatr").
-   - Im bardziej statek jest ustawiony w stosunku do kierunku wiatru, tym bardziej spada jego prędkość.
+   - Kierunek Wiatru zostaje wylosowany podczas uruchomienia aplikacji. ```brak informacji jak opbliczać```
+   - Kierunek Wiatru wpływa na prędkość statku (dodatnio gdy płynie się "z wiatrem" i ujemnie gdy płynie się "pod wiatr"). ```ok prawie rozumiem ale wzór proszę```
+   - Im bardziej statek jest ustawiony w stosunku do kierunku wiatru, tym bardziej spada jego prędkość. ```a ile to jest im bardziej?```
 
 3 **Rodzaje wiatrów**
 -
  ![image](https://github.com/user-attachments/assets/6328ab4c-e64d-47b0-a121-0e1b49a5a995)
 
 3. **Cel gry:**
+   ```ale tu nie ma żadnej gry```
    - Użytkownik płynie w wybranym przez siebie kierunku sterując przy tym obrotem łódki, by dostosować się do kierunku wiatru
 
 ---
@@ -44,22 +45,24 @@ Aplikacja mobilna w technologii .NET MAUI, która symuluje sterowanie statkiem z
 ## 5. **Specyfikacja funkcjonalna**
 
 ### **1. Start aplikacji**
-   - **Opis:** Po uruchomieniu aplikacji na ekranie pojawia się statek w formie kwadratu 50x50px oraz generuje się kierunek wiatru.
+   - **Opis:** Po uruchomieniu aplikacji na ekranie pojawia się statek w formie kwadratu 50x50px oraz generuje się kierunek wiatru. ```a jak się on generuje? bo to jest miejsce, by to opisać```
 
 
 ### **2. Sterowanie statkiem**
-   - **Opis:** Użytkownik może obracać statek w lewo i prawo za pomocą przycisków.
+   - **Opis:** Użytkownik może obracać statek w lewo i prawo za pomocą przycisków. ```gdzie mają być te przyciski?```
    - **Wejścia:**  
      - Kliknięcie przycisku „Rotate Left” – obrót statku w lewo o 15°.
      - Kliknięcie przycisku „Rotate Right” – obrót statku w prawo o 15°.
    - **Wyjścia:** Zmiana kąta obrotu statku.
 
 ### **3. Reakcja statku na wiatr**
-   - **Opis:** Wiatr wpływa na prędkość statku.
+   - **Opis:** Wiatr wpływa na prędkość statku. ```brak informacji jak opbliczać```
    - **Wejścia:** Kierunek wiatru.
    - **Wyjścia:**  
-     - Statek zmienia prędkość w zależności od ustawienia do wiatru.
+     - Statek zmienia prędkość w zależności od ustawienia do wiatru. ```dalej nie wiem jak zmienia prędkość```
 ---
+
+```ZNOWU TO SAMO TYLKO INACZEJ?!```
 ## 6. Przypadki użycia
 ### Przypadek 1: Skręt statku w prawo
 **Aktorzy:**
