@@ -16,8 +16,8 @@ System będzie składał się z następujących modułów:
 ### 4.1. Moduł A
 **Opis:**
 Składa się z planszy, na której znajdują się następujące elementy:
-- Żaglówka, będąca pod kontrolą gracza
-- Porty, które są celem gracza
+- Żaglówka, będąca pod kontrolą gracza.
+- Porty, które są celem gracza.
 **Dane wejściowe:**
     Sygnał z modułu C o potrzebie zmiany stanu gry.
 **Dane wyjściowe:**
@@ -38,30 +38,33 @@ Przetwarza input użytkownika i wiatr na faktyczny ruch łódki.
 Sygnał z modułu B o inpucie użytkownika.
 **Dane wyjściowe:**
 Powiadomienie modułu A o zaistniałych zmianach.
+
 ## 5. Przypadki użycia
-### Przypadek 1: Wciśnięcie przez użytkownika przycisku do skrętu w prawo
+### Przypadek 1: Wciśnięcie przez użytkownika przycisku do skrętu w prawo.
 **Aktorzy:**
 - Użytkownik systemu
 
 **Opis:**
-1. Użytkownik uruchamia aplikację
-1. Użytkownik wciska przycisk do skrętu w prawo
-1. Moduł B wysyła sygnał do moduły C z informacją o wcviśnięciu przycisku do skrętu w prawo
-1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A
+1. Użytkownik uruchamia aplikację jeśli jeszcze nie jest uruchomiona.
+1. Użytkownik wciska przycisk do skrętu w prawo.
+1. Moduł B wysyła sygnał do moduły C z informacją o wcviśnięciu przycisku do skrętu w prawo.
+1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A.
 1. Moduł A wyświetla zmiany w stanie gry.
-### Przypadek 2: Wciśnięcie przez użytkownika przycisku do skrętu w lewo
+2. 
+### Przypadek 2: Wciśnięcie przez użytkownika przycisku do skrętu w lewo.
 **Aktorzy:**
 - Użytkownik systemu
 
 **Opis:**
-1. Użytkownik uruchamia aplikację
-1. Użytkownik wciska przycisk do skrętu w lewo
-1. Moduł B wysyła sygnał do moduły C z informacją o wcviśnięciu przycisku do skrętu w lewo
-1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A
+1. Użytkownik uruchamia aplikację jeśli jeszcze nie jest uruchomiona.
+1. Użytkownik wciska przycisk do skrętu w lewo.
+1. Moduł B wysyła sygnał do moduły C z informacją o wcviśnięciu przycisku do skrętu w lewo.
+1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A.
 1. Moduł A wyświetla zmiany w stanie gry.
 
 ## 6. Wymagania niefunkcjonalne
 - Aplikacja działa w min. 20 klatkach na sekundę
+
 ## 7. Technologie i ograniczenia
 - Platforma: .NET 9
 - Framework: .NET MAUI
