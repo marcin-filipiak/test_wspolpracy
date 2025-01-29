@@ -44,14 +44,14 @@ git clone https://github.com/danekkkk/lodka-mobile.git
 1. Użytkownik naciska klawisz `<`, co obraca łódkę w lewo o 10°.
 2. Użytkownik naciska klawisz `>`, co obraca łódkę w prawo o 10°.
 3. Zmiana orientacji łódki jest wizualizowana na ekranie w formie animacji obrotu łódki.
-4. Aplikacja automatycznie oblicza wpływ kąta natarcia wiatru na żagiel oraz wyświetla zmodyfikowaną prędkość łódki w zależności od warunków żeglarskich.
+4. Aplikacja automatycznie oblicza wpływ kąta natarcia wiatru na żagiel oraz wyświetla zmodyfikowaną prędkość łódki w zależności od warunków żeglarskich. ```w jaki sposób oblicza?```
 5. W czasie rzeczywistym użytkownik może zmieniać kurs i dostosowywać sterowanie w celu optymalizacji prędkości łódki.
 
 **Scenariusz alternatywny**: <br />
 5a. Gdy łódka wejdzie w martwy kąt, prędkość zostaje wyzerowana.
 
 ### Przypadek Użycia 3: Obliczanie prędkości łódki w czasie rzeczywistym
-**Aktorzy**: Użytkownik <br />
+**Aktorzy**: Użytkownik <br /> ```czy aktorem nie będzie łódka?```
 **Opis**: Aplikacja dynamicznie oblicza prędkość łódki w czasie rzeczywistym, bazując na orientacji łódki względem kierunku wiatru. Funkcja ta pozwala użytkownikowi zrozumieć wpływ kąta wiatru na osiąganą prędkość i eksperymentować z manewrami. <br />
 **Scenariusz główny**:
 1. Użytkownik ustawia łódkę w określonym kierunku względem wiatru (np. półwiatr).
@@ -59,10 +59,13 @@ git clone https://github.com/danekkkk/lodka-mobile.git
    - Prędkość wiatru w węzłach,
    - Kąt natarcia wiatru na żagiel,
    - Wyznaczenie kąta martwego i jego wpływu na ruch łódki.
-3. Użytkownik obserwuje dynamicznie zmieniające się parametry prędkości wyświetlane na ekranie w panelu kontrolnym.
+3. Użytkownik obserwuje dynamicznie zmieniające się parametry prędkości wyświetlane na ekranie w panelu kontrolnym. ``` jak zmusisz do tego użytkownika by obserwował? ```
 4. Prędkość łódki różni się w zależności od kąta ustawienia:
    - Maksymalna prędkość osiągana przy kursie półwiatr,
    - Brak prędkości w kącie martwym.
+   ```ok jednak mało precyzyjnie```
+
+```BRAK PRZYPADKU Z USTAWIANIEM ŻAGLI```
 
 ## Plany na przyszłość
 Dodanie bardziej zaawansowanego trybu, uwzględniającego:
