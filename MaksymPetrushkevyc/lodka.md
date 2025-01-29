@@ -10,6 +10,7 @@ Aplikacja "Łódka" to symulacja interaktywnego żeglowania, w której użytkown
 - [Mechanika gry](#mechanika-gry)
 - [Wpływ wiatru](#wpływ-wiatru)
 - [Interakcja użytkownika](#interakcja-użytkownika)
+- [Elementy mechaniki aplikacji](#elementy-mechaniki-aplikacji)
 - [Przyszłe usprawnienia](#przyszłe-usprawnienia)
 - [Kontakt](#kontakt)
 
@@ -51,6 +52,13 @@ Kierunek wiatru jest losowo zmieniany w czasie rzeczywistym. Może on przybiera�
 - **Obserwacja zmian wiatru** – dostosowanie kursu do warunków pogodowych.
 - **Reakcja na zmieniające się warunki** – planowanie manewrów na podstawie siły i kierunku wiatru.
 
+## Elementy mechaniki aplikacji
+Aby aplikacja poprawnie działała, konieczne są następujące elementy:
+- **Model fizyczny** – symulacja wpływu wiatru na ruch łódki, uwzględniająca opór wody i bezwładność jednostki.
+- **Generator wiatru** – algorytm losujący kierunek i siłę wiatru w różnych odstępach czasu.
+- **System sterowania** – przyciski zmieniające kierunek łódki, ale bez kontroli nad żaglami.
+- **Silnik gry** – obsługa logiki aplikacji, interakcji użytkownika i dynamiki ruchu.
+
 ## Przyszłe usprawnienia
 - Wprowadzenie efektów wizualnych dla fal i odbić światła.
 - Optymalizacja wydajności silnika symulacyjnego.
@@ -58,4 +66,6 @@ Kierunek wiatru jest losowo zmieniany w czasie rzeczywistym. Może on przybiera�
 
 ## Kontakt
 Wszelkie pytania i sugestie prosimy kierować na adres e-mail: **kontakt@lodka-mobile.pl**.
+
+
 
