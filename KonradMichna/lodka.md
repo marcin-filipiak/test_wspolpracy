@@ -61,6 +61,8 @@ Aplikacja będzie oparta na architekturze MVVM (Model-View-ViewModel):
 - **Obraz 2:** Łódka skręcająca w lewo.
 - **Obraz 3:** Łódka skręcająca w prawo.
 - **Animacja:** Róża wiatrów, która dynamicznie zmienia się w zależności od kierunku wiatru.
+- - **Schemat sterowania łódką:**  
+  ![Sterowanie łódką](zeglowanie.png)
 
 ---
 
