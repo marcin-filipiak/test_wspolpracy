@@ -1,13 +1,13 @@
 # Dokumentacja Aplikacji Mobilnej – "Łódka"
 
 ## Spis Treści
-1. Główne funkcjonalności
-2. Użyte technologie
-3. Instalacja
-4. Szczegóły działania aplikacji
-5. Wyniki i interakcje
-6. Plany na przyszłość
-7. Kontakt
+1. [Główne funkcjonalności](#główne-funkcjonalności)
+2. [Użyte technologie](#użyte-technologie)
+3. [Instalacja](#instalacja)
+4. [Szczegóły działania aplikacji](#szczegóły-działania-aplikacji)
+5. [Wyniki i interakcje](#wyniki-i-interakcje)
+6. [Plany na przyszłość](#plany-na-przyszłość)
+7. [Kontakt](#kontakt)
 
 ## Główne funkcjonalności
 - **Symulacja ruchu łódki**: Aplikacja pozwala na interaktywną symulację poruszania się łódki na wodzie.
