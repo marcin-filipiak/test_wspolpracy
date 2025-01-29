@@ -53,5 +53,5 @@ Aby lepiej zobrazować wpływ różnych kierunków wiatru na żeglowanie, poniż
 - Łódka zmienia kierunek, a jej prędkość dostosowuje się do nowej orientacji.
 - Łódka zmienia kierunek i prędkość w zależności od ustawionego kierunku wiatru.
 
-## Podsumowanie
+## 6. Podsumowanie
 Symulacja żeglowania to interaktywna aplikacja edukacyjna, która pomaga użytkownikom zrozumieć zasady wpływu wiatru na ruch łódki. Dzięki prostemu sterowaniu i losowym warunkom wiatrowym, użytkownicy mogą testować różne manewry i szybko dostrzegać, jak zmieniające się warunki wiatrowe wpływają na prędkość łódki i jej kierunek.
