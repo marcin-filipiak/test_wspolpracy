@@ -1,6 +1,20 @@
 # Dokumentacja aplikacji BoatApp
 ## Spis treści
-1. [Wstęp](#1-wstęp)
+- [1. Wstęp](#1-wstęp)
+- [2. Cel aplikacji](#2-cel-aplikacji)
+- [3. Wymagania techniczne](#3-wymagania-techniczne)
+- [4. Zakres funkcjonalny](#4-zakres-funkcjonalny)
+- [5. Wymagania funkcjonalne](#5-wymagania-funkcjonalne)
+  - [5.1. Wiatr](#51-wiatr)
+  - [5.2. Wiatr](#52-łódka)
+  - [5.3. Plansza](#53-plansza)
+  - [5.4. Przyciski](#54-przyciski)
+- [6. Przypadki użycia](#6-przypadki-użycia)
+  - [6.1. Losowanie kierunku wiatru](#61-losowanie-kierunku-wiatru)
+  - [6.2. Sterowanie łódką](#62-sterowanie-łódką)
+  - [6.3. Zmiana prędkośći łódki](#63-zmiana-prędkości-łódki)
+- [7. Uwagi](#7-uwagi)
+  
 
 ## 1. Wstęp
 Aplikacja BoatApp to aplikacja desktopowa, jak i moblilna stworzona w .NET MAUI. Jest to forma gry, w której użytkownik manipuluje ruchem łódki na planszy.
@@ -65,3 +79,52 @@ Brak
 **Dane wyjściowe:**
 
 Brak
+
+### 5.4. Przyciski 
+Są dwa przyciski: przycisk strzałki w lewo i w prawo. Naciśnięcie każdego powoduje obrót łódki w odpowiednim kierunku o 15°.
+
+**Dane wejściowe:**
+
+Interakcja użytkownika poprzez naciśnięcie jednego z przycisków.
+
+**Dane wyjściowe:**
+
+Nowy kąt nachylenia łódki.
+
+## 6. Przypadki użycia
+
+### 6.1. Losowanie kierunku wiatru
+**Aktor:** Użytkownik
+**Opis:** Po uruchomieniu aplikacji losowany jest kierunek wiatru. 
+**Przebieg działania:**
+- Użytkownik odpala aplikację.
+- Losowany jest kierunek.
+- Wyświetlany jest napis (Label): *Wiatr wieje w kierunku {degree}°*.
+- Wyśweitlana jest odpowiednio obrócona strzałka wskazująca kierunek wiatru (Image).
+
+### 6.2. Sterowanie łódką 
+**Aktor:** Użytkownik
+**Opis:** Po kliknięciu przycisku strzałki łódka odwraca się o 15° w danym kierunku (lewo/prawo). 
+**Przebieg działania:**
+1. Obrót w lewo: 
+- Użytkownik naciska przycisk strzałki w lewo.
+- Łódka odwraca się o 15° w lewo.
+- Zależnie od kątu nachylenia, łódka porusza się, zatrzymuje lub stoi w miejscu.
+
+2. Obrót w prawo: 
+- Użytkownik naciska przycisk strzałki w prawo.
+- Łódka odwraca się o 15° w prawo.
+- Zależnie od kątu nachylenia, łódka porusza się, zatrzymuje lub stoi w miejscu.
+
+
+### 6.3. Zmiana prędkości łódki
+**Aktor:** Użytkownik
+**Opis:** Użytkownik obserwuje zmieniającą się prędkość łódki w zależności od kierunku wiatru oraz jej kątu nachylenia.
+**Przebieg działania:**
+- Użykownik za pomocą przycisków strzałek steruje łódką.
+- Prędkość łódki jest obliczana w czasie rzeczywistym.
+- Prędkość łódki może zmieniać się lub pozostać taka sama.
+
+## 7. Uwagi
+- Prędkość łódki powinna być obliczana dynamicznie *(wzór)*, a nie za pomocą statycznych wartości i warunków *(if)*.
+
