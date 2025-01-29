@@ -10,6 +10,7 @@
 5. [Mechanika gry](#5-mechanika-gry)
 6. [Elementy graficzne](#6-elementy-graficzne)
 7. [Przyszłe usprawnienia](#7-przyszłe-usprawnienia)
+8. [Specyfikacja funkcjonalna](#8-specyfikacja-funkcjonalna)
 
 ---
 
@@ -30,8 +31,8 @@ Gra mobilna w technologii .NET MAUI, która symuluje sterowanie łódką. Użytk
 ## 3. **Wymagania techniczne**
 - **Technologia:** .NET MAUI
 - **Język programowania:** C#
-- **Platformy docelowe:** Android, iOS, Windows
-- **Sterowanie:** Obsługa strzałek klawiatury
+- **Platformy docelowe:** Android, iOS
+- **Sterowanie:** Obsługa strzałek na ekranie telefonu za pomocą przycisku 
 
 ---
 
@@ -64,4 +65,39 @@ Aplikacja będzie oparta na architekturze MVVM (Model-View-ViewModel):
 
 ## 7. **Przyszłe usprawnienia**
 - Dodanie wskaźnika siły wiatru.
+
+## 8. **Specyfikacja funkcjonalna**
+Szczegółowy opis podstawowych funkcjonalności aplikacji oraz ich działania:
+
+### **1. Generowanie i wizualizacja łódki**
+   - **Opis:** Po uruchomieniu aplikacji na ekranie wyświetlana jest łódka widziana z góry.  
+   - **Wejścia:** Brak (łódka pojawia się automatycznie).  
+   - **Wyjścia:** Graficzne przedstawienie łódki na tle wody.  
+
+### **2. Sterowanie łódką**
+   - **Opis:** Użytkownik może sterować łódką za pomocą dotykowego interfejsu.  
+   - **Wejścia:**  
+     - Strzałka w lewo w formie przycisku na ekranie → skręt w lewo  
+     - Strzałka w prawo w formie przycisku na ekranie → skręt w prawo   
+   - **Wyjścia:** Zmiana pozycji i orientacji łódki na ekranie.  
+
+### **3. Generowanie i wizualizacja kierunku wiatru**
+   - **Opis:** Wiatr zmienia kierunek co kilka sekund i wpływa na ruch łódki.  
+   - **Wejścia:** Losowanie nowego kierunku wiatru.  
+   - **Wyjścia:**  
+     - Graficzna ikona róży wiatrów zmienia się zgodnie z nowym kierunkiem.  
+     - Łódka zmienia kurs zgodnie z nowym wiatrem.  
+
+### **4. Reakcja łódki na wiatr**
+   - **Opis:** Wiatr wpływa na trajektorię łódki, wymuszając korektę kursu przez gracza.  
+   - **Wejścia:** Nowy kierunek i siła wiatru.  
+   - **Wyjścia:**  
+     - Łódka dryfuje w stronę wiatru, jeśli gracz nie steruje.  
+     - Zbyt duży kąt względem wiatru spowalnia łódkę (np. „kąt martwy” na diagramie sterowania).  
+
+### **5. Interfejs użytkownika**
+   - **Opis:** Na ekranie dostępne są elementy UI ułatwiające nawigację.  
+   - **Elementy:**  
+     - Ikona kierunku wiatru.   
+     - Przycisk „Reset” do restartu pozycji łódki.  
 
