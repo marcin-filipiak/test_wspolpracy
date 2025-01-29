@@ -12,10 +12,10 @@ Aplikacja symuluje sterowanie łodzią żaglową. Symulacja uwzględnia kierunek
 Przyciski „Obrót w lewo” oraz „Obrót w prawo” obracają łódź o 15° w wskazanym kierunku.
 
 ### 2.2 Generowanie wiatru
-Po uruchomieniu aplikacji losowany jest kierunek wiatru. Użytkownik może zmienić kierunek wiatru, klikając przycisk „Losuj wiatr”.
+Po uruchomieniu aplikacji losowany jest kierunek wiatru. Użytkownik może zmienić kierunek wiatru, klikając przycisk „Losuj wiatr”. ```tego jakoś specjalnie nie mieliśmy w założeniach```
 
 ### 2.3 Wpływ wiatru na żagle
-W zależności od kąta wiatru oraz kąta rotacji łódki, żagle automatycznie zmieniają swoje ustawienie.
+W zależności od kąta wiatru oraz kąta rotacji łódki, żagle automatycznie zmieniają swoje ustawienie. ```jak?```
 
 ### 2.4 Monitorowanie aktualnych danych
 Aplikacja wyświetla dane dotyczące łódki oraz wiatru:
@@ -46,7 +46,7 @@ Aplikacja wyświetla dane dotyczące łódki oraz wiatru:
 1. Użytkownik uruchamia aplikację, jeśli nie jest jeszcze uruchomiona.
 2. Użytkownik klika przycisk „Obrót w lewo”.
 3. Aplikacja rejestruje naciśnięcie przycisku „Obrót w lewo”.
-4. Łódka zostaje obrócona o 15° w lewo.
+4. Łódka zostaje obrócona o 15° w lewo.  ```a coś z żaglami się dzieje?```
 
 **Dane wyjściowe:**
 - Zaktualizowany kąt rotacji łódki.
