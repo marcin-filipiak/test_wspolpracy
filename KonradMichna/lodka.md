@@ -57,12 +57,8 @@ Aplikacja będzie oparta na architekturze MVVM (Model-View-ViewModel):
 ---
 
 ## 6. **Elementy graficzne**
-- **Obraz 1:** Ikona łódki (widok z góry, stan neutralny).
-- **Obraz 2:** Łódka skręcająca w lewo.
-- **Obraz 3:** Łódka skręcająca w prawo.
-- **Animacja:** Róża wiatrów, która dynamicznie zmienia się w zależności od kierunku wiatru.
-- - **Schemat sterowania łódką:**  
-  ![Sterowanie łódką](zeglowanie.png)
+ - **Schemat sterowania łódką:**  
+  ![Alt text](https://junga.pl/wp-content/uploads/2024/03/kursy.png)
 
 ---
 
