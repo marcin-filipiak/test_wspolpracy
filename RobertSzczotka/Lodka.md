@@ -1,4 +1,4 @@
-# Aplikacja Symulacji Żeglowania
+# Aplikacja do symulacji żeglowania
 
 ## Opis Projektu
 Aplikacja umożliwia symulację podstawowych zasad żeglowania, uwzględniając wpływ kierunku wiatru na ruch łódki. Użytkownik może kontrolować kierunek łódki, ustawiać wiatr oraz obserwować zmiany w zachowaniu żagli i pozycji jednostki. Projekt wizualizuje kluczowe mechanizmy, takie jak "martwa strefa" (uniemożliwiająca ruch pod wiatr) oraz dostosowanie żagli do kąta względem wiatru.
@@ -7,11 +7,11 @@ Aplikacja umożliwia symulację podstawowych zasad żeglowania, uwzględniając 
 
 ## Główne Funkcjonalności
 ### 1. **Sterowanie Łódką**
-- **Przyciski "Turn Left" i "Turn Right"** – pozwalają na skręcanie łódki o 15° w lewo lub prawo.
+- **Przyciski "Lewo" i "Prawo"** – pozwalają na skręcanie łódki o 15° w lewo lub prawo.
 - **Przycisk "Start/Stop"** – uruchamia lub zatrzymuje ruch łódki. Automatycznie blokuje ruch, jeśli łódka próbuje płynąć pod wiatr.
 
 ### 2. **Kontrola Wiatru**
-- **Pole tekstowe i przycisk "Set Wind"** – umożliwiają wprowadzenie dowolnego kąta wiatru (w stopniach). Wiatr jest wizualizowany jako biała linia w górnej części ekranu.
+- **Pole tekstowe i przycisk "Ustaw wiatr"** – umożliwiają wprowadzenie dowolnego kąta wiatru (w stopniach). Wiatr jest wizualizowany jako biała linia w górnej części ekranu.
 
 ### 3. **Wizualizacja**
 - **Zmiana żagli** – trzy stany żagli:
@@ -64,7 +64,7 @@ Aplikacja wykorzystuje obrazy żagli:
 
 ### 1. Sterowanie Łódką
 Przykładowo, aby skręcić łódkę w lewo o 30°:
-1. Kliknij przycisk "Turn Left" dwa razy.
+1. Kliknij przycisk "Lewo" dwa razy.
 2. Łódka skręci o 30° w lewo.
 
 ### 2. Ustawianie Kierunku Wiatru
