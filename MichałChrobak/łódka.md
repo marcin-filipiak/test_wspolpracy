@@ -32,7 +32,10 @@ Sygnał wejściowy użytkownika (wciśnięcie jednego z przycisków)
 Powiadomienie modułu C o zaistniałych zmianach.
 ### 4.3. Moduł C
 **Opis:**
-Przetwarza input użytkownika i wiatr na faktyczny ruch łódki.
+Przetwarza input użytkownika i wiatr na faktyczny ruch łódki.\
+Rys.1: Nazwy i wpływ różnych kierunków wiatru na ruch żaglówki.\
+![_](https://github.com/user-attachments/assets/abd5d8af-e1ca-47df-9c6e-ef480920ea20)
+
 
 **Dane wejściowe:**
 Sygnał z modułu B o inpucie użytkownika.
@@ -47,7 +50,7 @@ Powiadomienie modułu A o zaistniałych zmianach.
 **Opis:**
 1. Użytkownik uruchamia aplikację jeśli jeszcze nie jest uruchomiona.
 1. Użytkownik wciska przycisk do skrętu w prawo.
-1. Moduł B wysyła sygnał do moduły C z informacją o wcviśnięciu przycisku do skrętu w prawo.
+1. Moduł B wysyła sygnał do modułu C z informacją o wcviśnięciu przycisku do skrętu w prawo.
 1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A.
 1. Moduł A wyświetla zmiany w stanie gry.
 2. 
@@ -58,7 +61,7 @@ Powiadomienie modułu A o zaistniałych zmianach.
 **Opis:**
 1. Użytkownik uruchamia aplikację jeśli jeszcze nie jest uruchomiona.
 1. Użytkownik wciska przycisk do skrętu w lewo.
-1. Moduł B wysyła sygnał do moduły C z informacją o wcviśnięciu przycisku do skrętu w lewo.
+1. Moduł B wysyła sygnał do modułu C z informacją o wcviśnięciu przycisku do skrętu w lewo.
 1. Moduł C rekalkuluje poruszanie się żaglówki i wysyła sygnał do modułu A.
 1. Moduł A wyświetla zmiany w stanie gry.
 
