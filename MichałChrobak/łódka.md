@@ -1,4 +1,4 @@
-# Specyfikacja funkcjonalna systemu XYZ
+# Specyfikacja funkcjonalna gry mobilnej/desktopowej Sailor
 
 ## 1. Wstęp
 Dokument opisuje wymagania funkcjonalne dla gry mobilnej/desktopowej Sailor. Przeznaczony jest dla zespołu programistów, którzy na jego podstawie mają zaimplementować oprogramowanie.
