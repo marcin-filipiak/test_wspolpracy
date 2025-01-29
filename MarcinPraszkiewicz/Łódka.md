@@ -122,5 +122,5 @@ Oczekiwany rezultat:
 Prędkość łódki dostosowuje się do siły wiatru. Wiatr sprzyjający przyspiesza łódkę, a wiatr z naprzeciwka spowalnia jej ruch.
 <hr>
 
-## **Podsumowanie:**:
+## **Podsumowanie:**
 Przypadki użycia w tej symulacji łódki żaglowej koncentrują się na symulacji dynamicznego sterowania łódką, automatycznym dostosowaniu żagli oraz zmiany prędkości zależnie od wiatru.
