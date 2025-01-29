@@ -1,58 +1,63 @@
-# Dokumentacja Aplikacji Mobilnej – "Łódka"
+# Gra mobilna – "Łódka"
+
+## Wprowadzenie
+Aplikacja "Łódka" to symulacja interaktywnego żeglowania, w której użytkownik steruje kierunkiem łódki, a jej prędkość zależy od wiatru. Realistyczny model fizyki oddaje wpływ warunków atmosferycznych na ruch jednostki pływającej, co stanowi wyzwanie dla gracza.
 
 ## Spis Treści
-1. [Główne funkcjonalności](#główne-funkcjonalności)
-2. [Użyte technologie](#użyte-technologie)
-3. [Instalacja](#instalacja)
-4. [Szczegóły działania aplikacji](#szczegóły-działania-aplikacji)
-5. [Wyniki i interakcje](#wyniki-i-interakcje)
-6. [Plany na przyszłość](#plany-na-przyszłość)
-7. [Kontakt](#kontakt)
+- [Najważniejsze funkcje](#najważniejsze-funkcje)
+- [Technologie użyte w aplikacji](#technologie-użyte-w-aplikacji)
+- [Instalacja i uruchomienie](#instalacja-i-uruchomienie)
+- [Mechanika gry](#mechanika-gry)
+- [Wpływ wiatru](#wpływ-wiatru)
+- [Interakcja użytkownika](#interakcja-użytkownika)
+- [Przyszłe usprawnienia](#przyszłe-usprawnienia)
+- [Kontakt](#kontakt)
 
-## Główne funkcjonalności
-- **Symulacja ruchu łódki**: Aplikacja pozwala na interaktywną symulację poruszania się łódki na wodzie.
-- **Sterowanie**: Użytkownik może sterować kierunkiem łódki, jednak jej prędkość zależy od kierunku wiatru.
-- **Wiatr**: Generowany losowo wpływa na kierunek oraz prędkość łódki.
-- **Interakcja z wiatrem**: Prędkość i kierunek ruchu łódki zależą od tego, czy wiatr wieje w żagle, od boku, czy z przodu.
-- **Losowe warunki pogodowe**: Zmienne warunki wiatrowe wymagają dostosowania strategii sterowania.
-- **Wizualizacja**: Graficzna reprezentacja łódki i wody umożliwia lepsze zobrazowanie ruchu.
+## Najważniejsze funkcje
+- **Symulacja żeglowania** – ruch łódki oparty na realistycznym modelu fizyki.
+- **Sterowanie kierunkiem** – użytkownik może obracać łódką, ale jej prędkość zależy od wiatru.
+- **Dynamiczna zmiana warunków pogodowych** – losowo generowany wiatr o różnych kierunkach i intensywności.
+- **Realistyczne oddziaływanie wiatru** – różne efekty w zależności od kąta natarcia wiatru na żagle.
+- **Prosty i intuicyjny interfejs** – przyciski umożliwiające kontrolę nad łódką.
 
-## Użyte technologie
-- **.NET MAUI** – framework do budowy aplikacji mobilnych
+## Technologie użyte w aplikacji
+- **.NET MAUI** – platforma do tworzenia aplikacji mobilnych.
+- **C#** – język programowania aplikacji.
+- **XAML** – do budowania interfejsu użytkownika.
 
-## Instalacja
+## Instalacja i uruchomienie
 Aby zainstalować aplikację, wykonaj następujące kroki:
 
 ```bash
 w trakcie budowy
 ```
 
-## Szczegóły działania aplikacji
+## Mechanika gry
+Łódka nie porusza się samodzielnie – jej prędkość jest zależna od wiatru. Użytkownik może jedynie sterować kierunkiem łódki (obracając ją w lewo lub w prawo). 
 
-### Sterowanie łódką
-Łódka porusza się w zależności od wiatru. Użytkownik może jedynie sterować kierunkiem łódki (obracać ją w lewo lub w prawo), ale jej prędkość zależy od tego, jak wiatr oddziałuje na żagle. Jeśli wiatr wieje bezpośrednio w żagle, łódka osiąga największą prędkość. Jeśli wieje od boku, prędkość jest mniejsza, a gdy wieje od przodu, łódka traci prędkość.
+## Wpływ wiatru
+Siła i kierunek wiatru mają kluczowy wpływ na ruch łódki:
+- **Wiatr w żagle (z tyłu)** – maksymalna prędkość łódki.
+- **Wiatr boczny** – umiarkowana prędkość i konieczność dostosowania kursu.
+- **Wiatr czołowy** – zatrzymuje łódkę, wymuszając zmianę kierunku.
 
-### Symulacja wiatru
-Wiatr zmienia swój kierunek losowo co określony czas i może przybierać następujące kierunki:
-- **Północ (N)** – spowalnia ruch łódki płynącej na południe
-- **Południe (S)** – przyspiesza ruch łódki płynącej na północ
-- **Wschód (E)** – wpływa na ruch łódki w stronę wschodnią
-- **Zachód (W)** – wpływa na ruch łódki w stronę zachodnią
-- **Północno-wschodni (NE)** – wpływa na ruch łódki w zależności od jej ustawienia
-- **Południowo-zachodni (SW)** – wpływa na ruch łódki w zależności od jej ustawienia
-- **Północno-zachodni (NW)** – wpływa na ruch łódki w zależności od jej ustawienia
-- **Południowo-wschodni (SE)** – wpływa na ruch łódki w zależności od jej ustawienia
+Kierunek wiatru jest losowo zmieniany w czasie rzeczywistym. Może on przybierać następujące wartości:
+- **Północ (N)**
+- **Południe (S)**
+- **Wschód (E)**
+- **Zachód (W)**
+- **Kierunki pośrednie (NE, NW, SE, SW)**
 
-## Wyniki i interakcje
-- Użytkownik może obserwować reakcję łódki na zmianę kierunku wiatru.
-- Zmieniający się kierunek i siła wiatru wymagają adaptacji strategii sterowania.
-- Możliwość dostosowania parametrów symulacji, takich jak siła wiatru.
+## Interakcja użytkownika
+- **Obracanie łódki** – zmiana kierunku poruszania w lewo lub w prawo.
+- **Obserwacja zmian wiatru** – dostosowanie kursu do warunków pogodowych.
+- **Reakcja na zmieniające się warunki** – planowanie manewrów na podstawie siły i kierunku wiatru.
 
-## Plany na przyszłość
-- Wprowadzenie efektów wizualnych (fale, odbicia światła).
-- Implementacja trybu multiplayer do współzawodnictwa.
-- Optymalizacja wydajności aplikacji.
+## Przyszłe usprawnienia
+- Wprowadzenie efektów wizualnych dla fal i odbić światła.
+- Optymalizacja wydajności silnika symulacyjnego.
+- Dodanie trybu multiplayer.
 
 ## Kontakt
-Jeśli masz pytania lub sugestie dotyczące aplikacji, skontaktuj się poprzez e-mail: **kontakt@lodka-mobile.pl**.
+Wszelkie pytania i sugestie prosimy kierować na adres e-mail: **kontakt@lodka-mobile.pl**.
 
