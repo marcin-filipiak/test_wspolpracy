@@ -57,6 +57,7 @@ Aby aplikacja poprawnie działała, konieczne są następujące elementy:
 - **Model fizyczny** – symulacja wpływu wiatru na ruch łódki, uwzględniająca opór wody i bezwładność jednostki.
 - **Generator wiatru** – algorytm losujący kierunek i siłę wiatru w różnych odstępach czasu.
 - **System sterowania** – przyciski zmieniające kierunek łódki, ale bez kontroli nad żaglami.
+- **Model łódki** - graficzny model łódki, który się obraca.
 - **Silnik gry** – obsługa logiki aplikacji, interakcji użytkownika i dynamiki ruchu.
 
 ## Przyszłe usprawnienia
