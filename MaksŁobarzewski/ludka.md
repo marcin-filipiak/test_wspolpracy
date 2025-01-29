@@ -20,8 +20,8 @@ System będzie składał się z następujących modułów:
 ### Dane wyjściowe:
 * brak
 ## 4.2 Moduł Łódki
-### Fuknkcje:
-1. **Speed**: na podstawie różnicy kąta wiatru i kąta obrotu łódki ustala jej prędkość
+### Funkcje:
+1. **Speed**: na podstawie różnicy kąta wiatru i kąta obrotu łódki ustala jej prędkość (0° - 30° prędkość = 2, 31° - 90° prędkość = 1, 91° - 130° prędkość = 0.5, 131° - 180° prędkość = 0, i analogicznie dla wartości ujemnych)
 1. **Move**: na podstawie aktualnego obrotu łódki oraz jej prędkości, zmienia jej pozycję na planszy
 ### Dane wejściowe: 
 * aktualny kąt wiatru
