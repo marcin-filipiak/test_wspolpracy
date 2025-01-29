@@ -8,8 +8,8 @@ Aplikacja to program stworzony w .NET MAUI, który symuluje pływanie łódki po
 
 ## 3. Zakres funkcjonalny
 System będzie składał się z następujących modułów:
-- **Moduł A – Symulacja wiatru** – odpowiedzialny za losowanie kierunku wiatru (bajdewind i inne kierunki żeglarskie).
-- **Moduł B – Sterowanie łódką** – umożliwia użytkownikowi obracanie łódki w lewo i w prawo o 15 stopni.
+- **Moduł A – Symulacja wiatru** – odpowiedzialny za losowanie kierunku wiatru (bajdewind i inne kierunki żeglarskie). ```oj nie! to się nie losuje!!! to wiatr jaki wieje względem ustawienia do niego łódki```
+- **Moduł B – Sterowanie łódką** – umożliwia użytkownikowi obracanie łódki w lewo i w prawo o 15 stopni. ```tylko o 15 stopni czy ze skokoiem 15 stopni?```
 - **Moduł C – Ruch łódki** – oblicza i aktualizuje położenie łódki w zależności od kierunku wiatru.
 - 
 ## 4. Wymagania funkcjonalne
