@@ -42,6 +42,8 @@ Siła i kierunek wiatru mają kluczowy wpływ na ruch łódki:
 - **Wiatr boczny** – umiarkowana prędkość i konieczność dostosowania kursu.
 - **Wiatr czołowy** – zatrzymuje łódkę, wymuszając zmianę kierunku.
 
+[kurs](wiatr.jpg)
+
 Kierunek wiatru jest losowo zmieniany w czasie rzeczywistym. Może on przybierać następujące wartości:
 - **Północ (N)**
 - **Południe (S)**
