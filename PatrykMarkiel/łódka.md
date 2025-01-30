@@ -27,7 +27,7 @@ Movement is realistic the sailboat can't turn in place.
 
 # Wind Mechanics
 
-The Sailing boat is accelerates til it reaches n value or max speed(it depends of sail position)
+The sailing boat accelerates until it reaches n value or max speed(it depends of sail position)
 
 If the wind is blowing between the angles of the sail setting, speed is reduced to half of the maximum possible speed.
 
