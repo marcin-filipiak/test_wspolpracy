@@ -11,7 +11,7 @@ Sailing Challenge is a 2D sailing game where the player controls a sailing boat 
 
 ## Boat Movement
 
-Speed depends of n value which is randomly set by program and is changing in the time
+Speed depends on n value which is randomly set by program and is changing in the time
 
 The player can adjust the boat’s angle to optimize speed and avoid obstacles.
 
