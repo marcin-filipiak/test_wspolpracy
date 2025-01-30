@@ -56,7 +56,7 @@ Kierunek wiatru jest losowo zmieniany w czasie rzeczywistym. Może on przybiera�
 
 ## Elementy mechaniki aplikacji
 Aby aplikacja poprawnie działała, konieczne są następujące elementy:
-- **Model fizyczny** – symulacja wpływu wiatru na ruch łódki, uwzględniająca opór wody i bezwładność jednostki. ```liczę na implementację w programie tych parametrów```
+- **Model fizyczny** – symulacja wpływu wiatru na ruch łódki, bezwładność jednostki. ```liczę na implementację w programie tych parametrów```
 - **Generator wiatru** – algorytm losujący kierunek i siłę wiatru w różnych odstępach czasu.
 - **System sterowania** – przyciski zmieniające kierunek łódki, ale bez kontroli nad żaglami. ```to wyjaśniło moje wcześniejsze pytanie```
 - **Model łódki** - graficzny model łódki, który się obraca.
