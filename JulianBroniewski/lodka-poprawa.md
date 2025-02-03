@@ -15,7 +15,7 @@ Aplikacja zawiera następujące funkcjonalności:
 
 ## 4. Wymagania funkcjonalne
 ### 4.1. Kierunek wiatru
-Moduł odpowiada za wybór losowego kierunku wiatru z zakresu od 1° do 360°, gdzie 360° to góra, 90° - lewo, 180° - dół itd.
+Moduł odpowiada za wybór losowego kierunku wiatru z zakresu od 1° do 360°, gdzie 360° to góra, 90° - prawo, 180° - dół itd.
 
 ### 4.2. Sterowanie łódką
 Moduł odpowiada za kontrolowanie położenia łódki.
