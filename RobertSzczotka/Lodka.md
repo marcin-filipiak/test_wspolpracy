@@ -36,7 +36,6 @@ Projekt wizualizuje kluczowe mechanizmy, takie jak "martwa strefa" (uniemożliwi
 ## Zasady Działania
 ### Mechanika Ruchu
 - Łódka porusza się tylko wtedy, gdy jej kierunek **nie znajduje się w "martwej strefie"** (45° w obie strony od kierunku wiatru). ```sporo. 45 w obie strony to 90 stopni. Podczas, gdy https://www.wind.net.pl/images/design/pdf/zeglarz-jachtowy-materialy-wind.pdf podaje pole martwe między 30 a 60, czyli 15 do 30 na każdą ze stron```
-- Próba uruchomienia ruchu w "martwej strefie" wyświetla komunikat błędu. ```dlaczego?```
 - Pozycja łódki jest aktualizowana w czasie rzeczywistym z uwzględnieniem ograniczeń ekranu (łódka nie wypływa poza granice).
 
 ### Zależność Żagli od Wiatru
