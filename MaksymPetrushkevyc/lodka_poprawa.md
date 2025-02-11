@@ -16,6 +16,9 @@ Aplikacja zawiera następujące funkcjonalności:
 ### 4.1. Kierunek wiatru
 Moduł odpowiada za wybór losowego kierunku wiatru z zakresu od 1° do 360°, gdzie 360° to góra, 90° - prawo, 180° - dół itd.
 
+![kurs](wiatr.jpg)
+
+
 ### 4.2. Sterowanie łódką
 Moduł odpowiada za kontrolowanie położenia łódki.
 - **Skręcanie:** użytkownik może obracać łódką, używając przycisków znajdujących się na interfejsie.
