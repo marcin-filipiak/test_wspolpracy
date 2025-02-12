@@ -112,20 +112,7 @@ The wind direction determines how much the boat's speed is affected. The boat's 
   </tr>
 </table>
 
-# Use Cases for **Sailing Challenge**
-
-## 1. Use Case: Starting the Game
-- **Description:** The player launches the game and starts the sailing challenge.
-- **Preconditions:** The game is running, and the player is on the main menu screen.
-- **Steps:**
-  1. The player presses the “Start” button.
-  2. The game loads the initial sailing environment.
-  3. The player sees the boat on the water, with wind direction and strength displayed.
-- **Expected Outcome:** The game starts, and the player can begin controlling the boat.
-
----
-
-## 2. Use Case: Controlling the Boat
+## 1. Use Case: Controlling the Boat
 - **Description:** The player controls the boat’s movement by adjusting the sail angle and steering to align with the wind direction.
 - **Preconditions:** The game has started, and the player is actively controlling the boat.
 - **Steps:**
@@ -136,7 +123,7 @@ The wind direction determines how much the boat's speed is affected. The boat's 
 
 ---
 
-## 3. Use Case: Adjusting the Sail
+## 2. Use Case: Adjusting the Sail
 - **Description:** The player adjusts the sail to match the wind direction, optimizing the boat’s speed.
 - **Preconditions:** The boat is in motion, and the wind is blowing from a certain direction.
 - **Steps:**
@@ -146,19 +133,7 @@ The wind direction determines how much the boat's speed is affected. The boat's 
 - **Expected Outcome:** The boat’s speed increases or decreases based on the correct adjustment of the sail.
 
 ---
-
-## 4. Use Case: Avoiding Obstacles
-- **Description:** The player avoids obstacles (rocks, other ships, reefs) while navigating through the water.
-- **Preconditions:** The boat is in motion, and obstacles are present in the environment.
-- **Steps:**
-  1. The player observes the surroundings and detects obstacles.
-  2. The player steers the boat to avoid collisions.
-  3. The player may need to adjust the sail to gain speed or maneuver more effectively around obstacles.
-- **Expected Outcome:** The boat successfully avoids obstacles, or a collision occurs if the player fails to navigate properly.
-
----
-
-## 5. Use Case: Wind Changes
+## 3. Use Case: Wind Changes !FUTURE MECHANIC!
 - **Description:** The wind direction and strength change over time, affecting the boat’s speed and direction.
 - **Preconditions:** The game is ongoing, and the boat is already in motion.
 - **Steps:**
@@ -168,15 +143,6 @@ The wind direction determines how much the boat's speed is affected. The boat's 
 - **Expected Outcome:** The boat’s speed and direction adjust dynamically based on the wind’s changes. The player must react to these changes to maintain control.
 
 ---
-
-## 6. Use Case: Game Over
-- **Description:** The game ends when the boat collides with an obstacle or reaches a goal (if applicable).
-- **Preconditions:** The boat is in motion, and the player is actively controlling it.
-- **Steps:**
-  1. The boat collides with an obstacle or completes the goal (if applicable).
-  2. A game over screen or summary appears.
-  3. The player is prompted to either restart the game or quit.
-- **Expected Outcome:** The game ends, and the player can choose to restart or exit.
 
 
 
