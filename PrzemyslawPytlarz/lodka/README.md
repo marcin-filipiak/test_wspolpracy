@@ -49,10 +49,6 @@
 - Suwak steru do kontrolowania kursu.
 - Przycisk do losowej zmiany kierunku wiatru.
 
-### 3.2. Ustawienia
-- Opcja zmiany siły wiatru.
-- Resetowanie do domyślnych warunków.
-
 ---
 
 ## 4. Algorytmy i logika aplikacji
