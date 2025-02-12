@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindSail</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div class="controls">
+        <label>Kąt obrotu: </label>
+        <span id="courseValue">0</span>&deg;
+        <br>
+        <input type="range" id="steering" min="-30" max="30" value="0">
+    </div>
+    <div class="wind-controls">
+        <button id="changeWind">Zmień wiatr</button>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
