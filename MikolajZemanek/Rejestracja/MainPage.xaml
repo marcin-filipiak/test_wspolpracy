@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rejestracja.MainPage"
+             Title="Rejestracja"
+             BackgroundColor="White">
+
+    
+        <VerticalStackLayout Padding="20,0" Spacing="10">
+            <!--Nagłówek-->
+        <Label Text="Rejestruj konto"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   BackgroundColor="#008080"
+                   HorizontalTextAlignment="Center"
+                   Padding="10"/>
+            
+            <!--Pole na maila-->
+        <Label Text="Podaj e-mail:" FontSize="14"/>
+        <Entry x:Name="EmailEntry" Placeholder="email" Keyboard="Email" WidthRequest="300"/>
+            
+            <!--Pole na hasło-->
+        <Label Text="Podaj hasło:" FontSize="14"/>
+        <Entry x:Name="PasswordEntry" IsPassword="True" WidthRequest="300"/>
+            
+            <!--Powtórzenie hasła-->
+        <Label Text="Podaj hasło:" FontSize="14"/>
+        <Entry x:Name="ConfirmPasswordEntry" IsPassword="True" WidthRequest="300"/>
+            
+            <!--Zatwierdź - przycisk-->
+        <Button Text="ZATWIERDŹ"
+                BackgroundColor="#008080"
+                TextColor="White"
+                FontAttributes="Bold"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                Clicked="OnRegisterClicked"/>
+            
+            <!--Komunikaty-->
+        <Label x:Name="MessageLabel"
+               Text=""
+               FontSize="12"
+               TextColor="Red"
+               HorizontalTextAlignment="Center"/>
+            
+    </VerticalStackLayout>
+    
+
+</ContentPage>
