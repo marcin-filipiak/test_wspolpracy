@@ -60,6 +60,7 @@ git clone https://github.com/danekkkk/lodka-mobile.git
 1. Użytkownik ustawia łódkę pod określonym kątem względem wiatru.
 2. Symulator oblicza prędkość łódki, uwzględniając:
    - Aktualny kierunek i prędkość wiatru,
+   - Kierunek, w którym płynie łódka.
    - Wpływ martwego kąta na ruch łódki.
 3. Wynikowa prędkość jest wyświetlana w lewym górnym rogu interfejsu.
 4. W zależności od kąta ustawienia:
