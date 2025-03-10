@@ -42,38 +42,26 @@ git clone https://github.com/danekkkk/lodka-mobile.git
 ### Scenariusz 2: Sterowanie łódką
 
 **Aktorzy**: Użytkownik\
-**Opis**: Gracz używa interfejsu lub klawiszy do sterowania łódką, zmieniając jej kurs względem wiatru. Sterowanie wymaga dostosowania prędkości i kąta natarcia żagla, aby zoptymalizować ruch.\
+**Opis**: Gracz używa interfejsu lub klawiszy do sterowania łódką, zmieniając jej kurs względem wiatru. Sterowanie pozwala użytkownikowi eksperymentować z różnymi strategiami żeglowania, jednocześnie zmieniając kierunek i dostosowując prędkość łódki w czasie rzeczywistym.\
 **Przebieg**:
 
 1. Użytkownik dotyka przycisku `<`, aby obrócić łódkę w lewo o 10°.
 2. Użytkownik dotyka przycisku `>`, aby obrócić łódkę w prawo o 10°.
 3. Zmiana orientacji jest wizualizowana poprzez animację ruchu łódki.
-4. Aplikacja na bieżąco oblicza wpływ wiatru na żagiel i dostosowuje prędkość łódki.
+4. Aplikacja na bieżąco dostosowuje prędkość łódki względem do kierunku wiatru i kierunku, w którym płynie.
 5. Gdy łódka znajdzie się w martwym kącie, jej prędkość zostaje zredukowana do zera.
 
-### Scenariusz 3: Dynamiczne obliczanie prędkości łódki
+### Scenariusz 3: Obliczanie prędkości łódki
 
 **Aktorzy**: Łódka\
-**Opis**: Aplikacja stale aktualizuje prędkość łódki w zależności od jej kąta względem wiatru. Realistyczny model pozwala użytkownikowi eksperymentować i uczyć się zasad żeglowania.\
+**Opis**: Aplikacja stale aktualizuje prędkość łódki w zależności od jej kąta względem wiatru.\
 **Przebieg**:
 
 1. Użytkownik ustawia łódkę pod określonym kątem względem wiatru.
-2. System oblicza prędkość łódki, uwzględniając:
+2. Symulator oblicza prędkość łódki, uwzględniając:
    - Aktualny kierunek i prędkość wiatru,
-   - Kąt żagla względem wiatru,
    - Wpływ martwego kąta na ruch łódki.
-3. Wynikowa prędkość jest wyświetlana w panelu kontrolnym.
+3. Wynikowa prędkość jest wyświetlana w lewym górnym rogu interfejsu.
 4. W zależności od kąta ustawienia:
    - Największa prędkość jest osiągana przy półwietrze,
    - W martwym kącie łódka traci możliwość poruszania się.
-
-### Scenariusz 4: Regulacja żagli
-
-**Aktorzy**: Użytkownik\
-**Opis**: Gracz może dostosować ustawienie żagli, aby poprawić efektywność żeglowania przy zmieniających się warunkach wiatrowych.\
-**Przebieg**:
-
-1. Użytkownik wybiera opcję regulacji żagla.
-2. Interfejs umożliwia zmianę kąta żagla względem kadłuba łódki.
-3. Aplikacja dynamicznie aktualizuje prędkość na podstawie ustawienia żagla i kąta wiatru.
-4. Optymalne ustawienie żagla zwiększa efektywność żeglowania i pozwala osiągnąć większą prędkość.
