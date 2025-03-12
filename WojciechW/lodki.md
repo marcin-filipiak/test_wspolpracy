@@ -1,68 +1,140 @@
-# Symulacja Żeglowania
+<h1>Dokumentacja przedwykonawcza systemu symulacji żaglówki</h1>
 
-## Cel aplikacji:
-Symulacja żeglowania ma na celu edukację użytkowników w zakresie podstawowych zasad żeglowania. Aplikacja symuluje wpływ wiatru na ruch łódki ```bardziej ustawienie żagli```, umożliwiając użytkownikowi interaktywne eksperymentowanie z kierunkiem wiatru i manewrowaniem łódką. Użytkownicy mogą lepiej zrozumieć, jak różne kierunki wiatru wpływają na prędkość i trajektorię łódki. ```zasadniczo na kurs łódki to powinien mieć wpływ sternik```
+<h2>1. Wstęp</h2>
 
-## Opis funkcjonalności:
-- Aplikacja symuluje wiatr wiejący z różnych kierunków, co wpływa na sposób poruszania się łódki. W zależności od kierunku wiatru, obliczana jest prędkość łódki oraz nadawana jest odpowiednia nazwa wiatru (np. wiatr z kierunku północnego, południowego, zachodniego itp.). ```jasne jasne :-p A nie bajdewind, baksztag, fordewind?```
+Dokument opisuje wymagania funkcjonalne dla systemu symulacji żaglówki. Przeznaczony jest dla zespołu programistów, którzy na jego podstawie mają zaimplementować oprogramowanie.
 
-- Użytkownik ma możliwość obracania łódki za pomocą przycisków AD ```tylko jak caps lock włączony? się upewniam...``` (lub strzałek na klawiaturze).  Możliwe jest również kontrolowanie jej ruchu przy pomocy dedykowanych przycisków sterujących ```a co to za przyciski? gdzie one sa?```, co umożliwia manewrowanie łódką w symulacji.
+<h2>2. Cel systemu</h2>
 
-- Kierunek wiatru jest losowo wybierany na początku symulacji oraz po każdorazowym naciśnięciu przycisku, który generuje nowy kierunek wiatru. ```jakim przycisku?``` Pozwala to na eksperymentowanie z różnymi warunkami żeglarskimi.
+System symulacji żaglówki ma umożliwiać użytkownikom symulacje sterowanie łodzią w zależności od obecnego kierunku wiatru i automatyczną regulację żagla.
 
-- W zależności od kierunku wiatru oraz aktualnej orientacji łódki, aplikacja oblicza jej prędkość. ```a jak ona to ma robić?``` Symulacja uwzględnia zasady fizyki żeglowania, takie jak prędkość wiatru, kąt natarcia wiatru na żagle oraz opór wody. ```no, to nie będzie łatwe ale trzymam za słowo, gdybym tylko wzory tu miał...```
+<h2>3. Zakres funkcjonalny</h2>
 
--  Aplikacja oferuje ```raczej dopiero będzie oferować, tak zakładamy``` intuicyjny interfejs graficzny, który umożliwia łatwe sterowanie łódką oraz śledzenie zmieniających się warunków wiatrowych. Na ekranie widoczny jest zarówno sam ekran symulacji, jak i panel sterowania, na którym użytkownik może wybrać odpowiednie opcje sterowania.
+System będzie składał się z następujących modułów:
 
-## Diagramy kierunków wiatru
-Aby lepiej zobrazować wpływ różnych kierunków wiatru na żeglowanie, poniżej znajduje się przykładowy diagram. Użytkownik może wprowadzać zmiany w położeniu łódki, dostosowując ją do zmieniających się kierunków wiatru.
+<table>
+    <tr>
+        <th>Moduł</th>
+        <th>Opis</th>
+    </tr>
+    <tr>
+        <td>Moduł symulacji wiatru</td>
+        <td>Odpowiedzialny za losowanie kierunku wiatru i obliczanie prędkości żaglówki dla danego kątu wiatru.</td>
+    </tr>
+    <tr>
+        <td>Moduł sterowania łodzią</td>
+        <td>Obsługujący sterowanie kierunkiem żaglówki i automatyczne ustawienie żagla</td>
+    </tr>
+</table>
+
+<h2>4. Wymagania funkcjonalne</h2>
+
+<h3>4.1. Moduł symulacji wiatru</h3>
+
+- Wiatr jest losowany na początku działania systemu oraz po naciśnięciu przycisku w miejscu obrazka (strzałki) wskazującego kierunek wiatru. Wiatr, jako zmienna, przyjmuje wartość w zakresie 0-359°.
+- Obrót strzałki kierunku wiatru uzależnione jest od wartości wiatru.
+
 
 <center> <img src="kierunki_wiatru.jpg" alt="Diagram Kierunków Wiatru"> </center>
 
-# Przypadki Użycia:
-### Przypadek Użycia 1: Losowanie kierunku wiatru
+- Prędkość żaglówki obliczana jest na podstawie kąta względem wiatru.
+- Domyślna prędkość żaglówki jest mnożona przez stosunek predkości żaglówki do prędkości domyślnej, dzięki czemu uzyskujemy prędkość żaglówki w danym momencie.
+- Dla uproszczenia czytelności, w tabeli podano wartości gdyby wiatr losował się w zakresie 1-360 stopni, w programie należy dostosować nazwe wiatru i stosunek do przypadku, gdy będzie losować się w zakresie 0-359 stopni.
 
-<b>Aktor:</b> Użytkownik<br>
-<b>Opis:</b> Po uruchomieniu aplikacji użytkownik naciska przycisk, który losuje kierunek wiatru.<br>
-<b>Scenariusz:</b>
-- Użytkownik uruchamia aplikację.
-- Aplikacja losowo generuje kierunek wiatru. ```ale to tak sama losuje? czy jednak ten przycisk mam obsługiwać? Jaki przycisk?```
-- Użytkownik widzi wybrany kierunek wiatru oraz prędkość łódki. ```widzi albo nie widzi... może akurat przez okno patrzy i widzi ładne kwiaty. My tu nie piszemy co widzi użytkownik, bo tego nie wiemy, tylko co wyświetla aplikacja```
-- Kierunek wiatru jest wyświetlony na ekranie.
+<table>
+    <tr>
+        <th>Kąt żaglówki względem wiatru</th>
+        <th>Nazwa wiatru</th>
+        <th>Stosunek prędkości żaglówki do prędkości domyślnej</th>
+    </tr>
+    <tr>
+        <td>1° do 15° oraz 346° do 360°</td>
+        <td>Kąt martwy</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>16° do 45° oraz 316° do 344°</td>
+        <td>Bejdewind</td>
+        <td>0.25</td>
+    </tr>
+    <tr>
+        <td>46° do 90° oraz 271° do 315°</td>
+        <td>Półwiatr</td>
+        <td>0.(3)</td>
+    </tr>
+    <tr>
+        <td>91° do 135° oraz 226° do 270°</td>
+        <td>Baksztag</td>
+        <td>0.5</td>
+    </tr>
+    <tr>
+        <td>136° do 225°</td>
+        <td>Fordewind</td>
+        <td>1</td>
+    </tr>
+</table>
 
-### Przypadek Użycia 2: Sterowanie łódką
+<h3>4.2. Moduł sterowania żaglówką</h3>
 
-<b>Aktor:</b> Użytkownik<br>
-<b>Opis:</b> Użytkownik steruje łódką, używając przycisków AD (lub strzałek) do obracania jej.<br> ``` czyli tu A z caps lock, jak będzie bez to nie obsługujemy```
-<b>Scenariusz:</b>
-- Użytkownik naciska klawisz A lub strzałkę w lewo, aby obrócić łódkę w lewo. ```ale ileś stopni czy jak ona się ma obracać?```
-- Użytkownik naciska klawisz D lub strzałkę w prawo, aby obrócić łódkę w prawo. ```podobnie nie wiem o ile ją obracać```
-- Łódka zmienia kierunek, a jej prędkość dostosowuje się do nowej orientacji. ```a ta prędkość to w jaki sposób się ma dostosować, jakiś wzór poproszę```
-- Łódka zmienia kierunek i prędkość w zależności od ustawionego kierunku wiatru. ```przed chwilą zmieniła kierunek, znowu zmienia? co tu się dzieje?```
+- System automatycznie obraca żagiel do optymalnego położenia, aby "łapać" jak najwięcej wiatru.
+- Można obracać żaglówką używając przycisków na klawiaturze A oraz D.
+- W przypadku emulacji na telefon, naciśnięcie lewej strony ekranu symuluje naciśnięcie przycisku A na klawiaturze, a naciśnięcie prawej strony ekranu symuluje naciśnięcie przycisku D na klawiaturze.
 
-### Przypadek Użycia 3: Zmiana kierunku wiatru
+Rotacja obliczana jest wzorem:
+- Po naciśnięciu przycisku A
 
-<b>Aktor:</b> Użytkownik<br>
-<b>Opis:</b> Użytkownik zmienia kierunek wiatru za pomocą przycisku ```cały czas jakiś magiczny przycisk, może power? :-D ```, aby zobaczyć, jak wpłynie to na prędkość łódki.<br>
-<b>Scenariusz:</b> 
-- Użytkownik naciska przycisk „Losuj Wiatr” ```o jakiś nowy przycisk, czyli nie power :-( nie mam takiego przycisku, to na klawiaturze gdzieś jest?```.
-- Nowy kierunek wiatru jest generowany losowo ```ale jak, mam literki jakieś losować np. N, S, E, W, czy w stopniach?```.
-- Aplikacja oblicza nową prędkość łódki i wyświetla ją. ```świetnie że oblicza ale jako programista muszę zaprogramować jak to ma zrobić```
-- Kierunek wiatru oraz prędkość łódki są zmieniane zgodnie z nowymi warunkami wiatrowymi. ```bym się przyczepił tej prędkości jak ją obliczyć zgodnie z nowymi warunkami, ale ze starymi też nie wiedziałem jak```
+```rotacja = rotacja + 1 * aktualna prędkość / 2 + 1```
 
-### Przypadek Użycia 4: Obserwacja zmieniającej się prędkości łódki
+- Po naciśnięciu przycisku D
 
-<b>Aktor:</b> Użytkownik<br>
-<b>Opis:</b> Użytkownik monitoruje zmieniającą się prędkość łódki w zależności od kierunku wiatru oraz manewrowania łódką.<br>
-<b>Scenariusz:</b>
-- Użytkownik steruje łódką, zmieniając jej kąt względem wiatru.
-- Aplikacja oblicza prędkość łódki w czasie rzeczywistym. ```nie wiem jak obliczać```
-- Użytkownik obserwuje zmieniającą się prędkość w zależności od manewrów. ```a jak sprawdzić czy użytkownik obserwuje, może detekcja ruchu gałek ocznych? a jak nie będzie obserwować to przypadek użycia ma rozumiem alternatywną ścieżkę?```
-- Prędkość łódki jest wyświetlana na ekranie w zależności od jej orientacji względem wiatru.
+```rotacja = rotacja - 1 * aktualna prędkość / 2 + 1```
 
-# Planowane funkcjonalności
-- Dodanie elementów takich jak fale, zmieniająca się intensywność wiatru, czy inne zmienne atmosferyczne.
-- Możliwość rywalizowania z innymi użytkownikami o jak najszybsze pokonanie określonej trasy w określonych warunkach wiatrowych.
+Obrót obrazku żaglówki na ekranie może być obliczone wzorem:
 
-# Podsumowanie
-Symulacja żeglowania to interaktywna aplikacja edukacyjna, która pomaga użytkownikom zrozumieć zasady wpływu wiatru na ruch łódki. ```po tej dokumentacji to programista nie rozumie jaki ten wpływ wiatru ma być```. Dzięki prostemu sterowaniu i losowym warunkom wiatrowym, użytkownicy mogą testować różne manewry i szybko dostrzegać, jak zmieniające się warunki wiatrowe wpływają na prędkość łódki i jej kierunek.
+```radiany rotacji = rotacja / 180 * PI```
+
+```x = x + cos(radiany rotacji) * aktualna prędkość```
+
+```y = y + sin(radiany rotacji) * aktualna prędkość```
+
+- Jeżeli łódka będzie próbować wypłynąć poza zakresy ekranu, powinna być od razu zatrzymana.
+
+<h2>5. Przypadki użycia</h2>
+
+<h3>1. Losowanie kierunku wiatru</h3>
+
+**Opis:** Użytkownik chce wylosować nowy kierunek wiatru.<br>
+**Przebieg:**
+- Użytkownik uruchamia aplikacje, automatycznie losuje się kierunek wiatru, strzałka na ekranie wskazująca kierunek wiatru dopasowywuje swój obrót do aktualnego kierunku wiatru.
+- Użytkownik naciska strzałke, która wskazuje obecny kierunek wiatru.
+- Wiatr przyjmuje nową, losową wartość z zakresu 0-359, zmienia się kierunek strzałki wskazującej kierunek wiatru na ekranie.
+
+<h3>2. Obracanie łódki</h3>
+
+**Opis:** Użytkownik chce wylosować nowy kierunek wiatru.<br>
+**Przebieg:**
+- Użytkownik uruchamia aplikacje, automatycznie losuje się kierunek wiatru, strzałka na ekranie wskazująca kierunek wiatru dopasowywuje swój obrót do aktualnego kierunku wiatru.
+- Użytkownik naciska przycisk A lub dotyka lewej strony ekranu w przypadku urządzenia mobilnego lub naciska przycisk D lub dotyka prawej stronie ekranu w przypadku urządzenia mobilnego.
+- System oblicza rotację żaglówki zgodnie ze wzorem.
+- Żaglówka obraca się zgodnie z obliczoną rotacją.
+- System automatycznie obraca żagiel do optymalnego położenia.
+- Użytkownik może kontynuować sterowanie żaglówką poprzez naciśnięcie przycisku A lub D lub lewej lub prawej strony ekranu w przypadku urządzenia mobilnego.
+
+<h3>3. Unikanie wypłynięcia poza ekran</h3>
+
+**Opis:** Użytkownik próbuje wypłynąć łódką poza granice ekranu.<br>
+**Przebieg:**
+- Użytkownik uruchamia aplikacje, automatycznie losuje się kierunek wiatru, strzałka na ekranie wskazująca kierunek wiatru dopasowywuje swój obrót do aktualnego kierunku wiatru.
+- Użytkownik steruje łódką za pomocą klawiszy A i D lub - w przypadku urządzenia mobilnego - lewą i prawą stroną ekranu tak, aby spróbować wypłynąć poza ekran.
+- Gdy żaglówka osiąga krawędź ekranu, jej ruch jest zatrzymany, aby nie wypłynęła poza ekran.
+
+<h2>6. Technologie i ograniczenia</h2>
+
+- JavaScript, HTML5, Canvas API.
+- Aplikacja hostowana w WebView, obsługiwana przez warstwę natywną .NET MAUI.
+
+<h2>7. Inne uwagi</h2>
+
+- System musi być w bardzo łatwy sposób rozszerzalny.
+- Powinno być pełne wsparcie dla emulacji na system Android za pomocą .NET MAUI.
+
