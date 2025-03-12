@@ -3,15 +3,15 @@
 > Dokument opisuje wymagania funkcjonalne dla systemu symulacji żaglówki. Przeznaczony jest dla zespołu programistów, którzy na jego podstawie mają zaimplementować oprogramowanie.
 
 ## Spis Treści
-1. [Cel systemu](#)
-2. [Zakres funkcjonalny](#)
-3. [Wymagania funkcjonalne](#)
-4. [Przypadki użycia](#)
-6. [Wymagania niefunkcjonalne](#)
-6. [Technologie i ograniczenia](#)
-6. [Inne uwagi](#)
-6. [Plany na przyszłość](#)
-6. [Kontakt](#)
+1. [Cel systemu](#1-cel-systemu)
+2. [Zakres funkcjonalny](#2-zakres-funkcjonalny)
+3. [Wymagania funkcjonalne](#3-wymagania-funkcjonalne)
+4. [Przypadki użycia](#4-przypadki-użycia)
+5. [Wymagania niefunkcjonalne](#5-wymagania-niefunkcjonalne)
+6. [Technologie i ograniczenia](#6-technologie-i-ograniczenia)
+7. [Inne uwagi](#7-inne-uwagi)
+8. [Plany na przyszłość](#8-plany-na-przyszłość)
+9. [Kontakt](#9-kontakt)
 
 ## 1. Cel systemu
 System symulacji żaglówki ma umożliwiać użytkownikom symulacje sterowanie łódką w zależności od wygenerowanego kierunku wiatru.
