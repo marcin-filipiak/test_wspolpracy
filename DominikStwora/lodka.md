@@ -105,11 +105,11 @@ Moduł odpowiedzialny za dynamiczną zmianę prędkości łódki w zależności 
   2. Fordewind:
   <img src="fordewind_sail.png" alt="Fordewind" width="100" heigh="100" />
 
-  3. Prawy żagiel:
-  <img src="right_sail.png" alt="Prawy żagiel" width="100" heigh="100" />
+  3. Lewy żagiel:
+  <img src="right_sail.png" alt="Lewy żagiel" width="100" heigh="100" />
 
-  4. Lewy żagiel:
-  <img src="left_sail.png" alt="Lewy żagiel" width="100" heigh="100" />
+  4. Prawy żagiel:
+  <img src="left_sail.png" alt="Prawy żagiel" width="100" heigh="100" />
 
 ### 3.4 Moduł poruszania łódką   
 
