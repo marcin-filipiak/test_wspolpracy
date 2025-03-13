@@ -5,7 +5,7 @@
 **WindSail** to aplikacja symulacyjna dostępna na przeglądarki internetowe, pozwalająca na sterowanie wirtualną łodzią żaglową. Głównym celem projektu jest realistyczne odwzorowanie interakcji między wiatrem, żaglami i sterem, umożliwiając użytkownikowi naukę podstawowych zasad żeglarstwa.
 
 ### Kluczowe funkcjonalności:
-- Generowanie losowego kierunku i siły wiatru przy załadowaniu aplikacji.
+- Generowanie losowego kierunku i siły wiatru.
 - Ustawianie żagli w zależności od kierunku wiatru i kursu łodzi.
 - Sterowanie kursem łodzi poprzez wychylenie steru.
 - Dynamiczna zmiana grafiki łodzi w zależności od jej ustawienia względem wiatru.
