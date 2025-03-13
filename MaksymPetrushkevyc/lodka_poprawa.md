@@ -74,7 +74,7 @@ Moduł odpowiada za wyświetlenie na interfejsie użytkownika informacji na tema
 ## 8. Wymagania dotyczące bezpieczeństwa
 - **Ochrona danych:** wszystkie dane użytkownika powinny być szyfrowane.
 - **Autoryzacja:** aplikacja powinna obsługiwać mechanizmy autoryzacji, aby zapewnić dostęp do określonych funkcji tylko uprawnionym użytkownikom.
-- **Bezpieczeństwo kodu:** kod aplikacji powinien być zabezpieczony przed atakami typu SQL Injection, XSS i CSRF.
+- **Bezpieczeństwo kodu:** kod aplikacji powinien być zabezpieczony przed atakami typu SQL Injection.
 
 ## 9. Wydajność i skalowalność
 - **Optymalizacja:** aplikacja powinna działać płynnie na urządzeniach mobilnych o ograniczonych zasobach.
