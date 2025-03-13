@@ -23,8 +23,11 @@ XAML – język do definiowania interfejsu użytkownika.
 ## 4. Opis Funkcjonalności
 ## 4.1 Interfejs użytkownika
 Tło przedstawiające wodę.
+
 Obraz żaglówki, który może się obracać.
+
 Wskaźnik kierunku wiatru w rogu ekranu.
+
 Przycisk do restartu.
 ## 4.2 Generowanie wiatru
 Wiatr generowany jest co ok. 5-10 sekund.
