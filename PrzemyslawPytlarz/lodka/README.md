@@ -23,7 +23,6 @@
 
 ### 2.2. Ustawienie żagli
 - Żagle dostosowują się do kursu łodzi w stosunku do wiatru.
-- Maksymalna efektywność napędu uzyskiwana jest przy kursach baksztagowych i bajdewindowych.
 - Przy kursie w linii wiatru (tzw. "z wiatrem") łódź może poruszać się ze zbliżoną prędkością do siły wiatru.
 - Przy kursach na wiatr (żygzakowanie) łódź może płynąć, ale wymaga optymalnego ustawienia żagli.
 
