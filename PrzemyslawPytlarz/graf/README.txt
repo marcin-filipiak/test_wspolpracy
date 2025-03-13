@@ -1,72 +1,74 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Najkrótsza droga w grafie</title>
+    <title>Shortest Path in a Graph</title>
 </head>
 <body>
-    <h2>Znajdź najkrótszą ścieżkę</h2>
-    <label>Podaj wagę A → B:</label>
-    <input type="number" id="ab" min="1"><br><br>
+    <h2>Find the Shortest Path</h2>
+    
+    <label>Enter weight A → B:</label>
+    <input type="number" id="weightAB" min="1"><br><br>
 
-    <label>Podaj wagę A → C:</label>
-    <input type="number" id="ac" min="1"><br><br>
+    <label>Enter weight A → C:</label>
+    <input type="number" id="weightAC" min="1"><br><br>
 
-    <label>Podaj wagę B → C:</label>
-    <input type="number" id="bc" min="1"><br><br>
+    <label>Enter weight B → C:</label>
+    <input type="number" id="weightBC" min="1"><br><br>
 
-    <button onclick="znajdzNajkrotszaSciezke()">Oblicz</button>
-    <h3>Wynik:</h3>
-    <p id="wynik"></p>
+    <button onclick="findShortestPath()">Calculate</button>
+
+    <h3>Result:</h3>
+    <p id="result"></p>
 
     <script>
-        function znajdzNajkrotszaSciezke() {
-            // Pobranie wartości od użytkownika
-            let wagaAB = parseInt(document.getElementById("ab").value);
-            let wagaAC = parseInt(document.getElementById("ac").value);
-            let wagaBC = parseInt(document.getElementById("bc").value);
+        function findShortestPath() {
+            // Get input values
+            let weightAB = parseInt(document.getElementById("weightAB").value);
+            let weightAC = parseInt(document.getElementById("weightAC").value);
+            let weightBC = parseInt(document.getElementById("weightBC").value);
 
-            if (isNaN(wagaAB) || isNaN(wagaAC) || isNaN(wagaBC)) {
-                document.getElementById("wynik").innerText = "Podaj wszystkie wagi!";
+            if (isNaN(weightAB) || isNaN(weightAC) || isNaN(weightBC)) {
+                document.getElementById("result").innerText = "Please enter all weights!";
                 return;
             }
 
-            // Graf jako obiekt
-            let graf = {
-                "A": { "B": wagaAB, "C": wagaAC },
-                "B": { "A": wagaAB, "C": wagaBC },
-                "C": { "A": wagaAC, "B": wagaBC }
+            // Graph representation
+            let graph = {
+                "A": { "B": weightAB, "C": weightAC },
+                "B": { "A": weightAB, "C": weightBC },
+                "C": { "A": weightAC, "B": weightBC }
             };
 
-            // Algorytm Dijkstry
-            let dystanse = { "A": 0, "B": Infinity, "C": Infinity };
-            let poprzednicy = { "A": null, "B": null, "C": null };
-            let nieodwiedzone = new Set(["A", "B", "C"]);
+            // Dijkstra's algorithm
+            let distances = { "A": 0, "B": Infinity, "C": Infinity };
+            let predecessors = { "A": null, "B": null, "C": null };
+            let unvisited = new Set(["A", "B", "C"]);
 
-            while (nieodwiedzone.size > 0) {
-                let aktualny = Array.from(nieodwiedzone).reduce((a, b) => dystanse[a] < dystanse[b] ? a : b);
-                nieodwiedzone.delete(aktualny);
+            while (unvisited.size > 0) {
+                let current = Array.from(unvisited).reduce((a, b) => distances[a] < distances[b] ? a : b);
+                unvisited.delete(current);
 
-                for (let sasiad in graf[aktualny]) {
-                    let nowaOdleglosc = dystanse[aktualny] + graf[aktualny][sasiad];
-                    if (nowaOdleglosc < dystanse[sasiad]) {
-                        dystanse[sasiad] = nowaOdleglosc;
-                        poprzednicy[sasiad] = aktualny;
+                for (let neighbor in graph[current]) {
+                    let newDistance = distances[current] + graph[current][neighbor];
+                    if (newDistance < distances[neighbor]) {
+                        distances[neighbor] = newDistance;
+                        predecessors[neighbor] = current;
                     }
                 }
             }
 
-            // Odtworzenie ścieżki
-            let sciezka = [];
-            let krok = "B";
-            while (krok) {
-                sciezka.unshift(krok);
-                krok = poprzednicy[krok];
+            // Reconstruct path
+            let path = [];
+            let step = "B";
+            while (step) {
+                path.unshift(step);
+                step = predecessors[step];
             }
 
-            let wynik = `Najkrótsza droga z A do B: ${sciezka.join(" -> ")}, koszt: ${dystanse["B"]}`;
-            document.getElementById("wynik").innerText = wynik;
+            let result = `Shortest path from A to B: ${path.join(" -> ")}, cost: ${distances["B"]}`;
+            document.getElementById("result").innerText = result;
         }
     </script>
 </body>
