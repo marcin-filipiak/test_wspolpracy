@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najkótsza droga w grafie</title>
+
+    <link rel="shortcut icon" href="triangle.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Najkótsza droga w grafie</h2>
+    
+    <div id="triangle">
+        <img src="triangle.svg" width="500px" height="500px" alt="tiangle">
+        
+        <input type="number" id="weightAB" min="1" class="input-weight"><br><br>
+    
+        <input type="number" id="weightAC" min="1" class="input-weight"><br><br>
+    
+        <input type="number" id="weightBC" min="1" class="input-weight"><br><br>
+    
+        <span class="letters" id="letterA">A</span>
+        <span class="letters" id="letterB">B</span>
+        <span class="letters" id="letterC">C</span>
+    </div>
+
+
+    <button onclick="findShortestPath()">Oblicz</button>
+
+    <h3>Wynik:</h3>
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
