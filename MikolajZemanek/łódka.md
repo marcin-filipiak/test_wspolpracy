@@ -8,8 +8,10 @@ Aplikacja symuluje żaglówkę sterowaną przez użytkownika, uwzględniając wp
 Użytkownik steruje żaglówką za pomocą klawiszy:
 Strzałka w lewo – obrót żaglówki w lewo.
 Strzałka w prawo – obrót żaglówki w prawo.
+
 Wiatr generowany jest losowo co pewien czas i zmienia się o 45° w lewo lub w prawo względem poprzedniego kierunku.
 Kąt wiatru wyświetlany jest w rogu ekranu.
+
 Prędkość żaglówki zależy od kąta względem kierunku wiatru:
 Jeśli żaglówka jest ustawiona pod kątem martwym (ok. 45° na lewo i prawo od wiatru), nie płynie.
 Im bardziej zgodna z kierunkiem wiatru, tym szybciej płynie.
@@ -23,7 +25,7 @@ XAML – język do definiowania interfejsu użytkownika.
 Tło przedstawiające wodę.
 Obraz żaglówki, który może się obracać.
 Wskaźnik kierunku wiatru w rogu ekranu.
-Przycisk do restartu gry.
+Przycisk do restartu.
 ## 4.2 Generowanie wiatru
 Wiatr generowany jest co ok. 5-10 sekund.
 Kierunek zmienia się o ±45° od poprzedniego.
