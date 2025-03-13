@@ -3,7 +3,7 @@
 ## 1. Wstęp
 Niniejszy dokument określa wymagania funkcjonalne dla aplikacji Łódka, służącej do symulacji ruchu łodzi żaglowej. Jest przeznaczony dla zespołu programistycznego odpowiedzialnego za implementację systemu.
 ## 2. Cel systemu
-Głównym celem aplikacji jest możliwie najbardziej realistyczna symulacja ruchu łódki żaglowej po powierzchni wody, w zależności od kierunku wiatru i położenia łódki.
+Głównym celem aplikacji jest symulacja ruchu łódki żaglowej po powierzchni wody, w zależności od kierunku wiatru i położenia łódki.
 
 ## 3. Zakres funkcjonalny
 Aplikacja zawiera następujące funkcjonalności:
