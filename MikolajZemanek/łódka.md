@@ -3,8 +3,8 @@ Niniejsza dokumentacja opisuje projekt aplikacji stworzonej w .NET MAUI, której
 
 Aplikacja symuluje żaglówkę sterowaną przez użytkownika, uwzględniając wpływ wiatru na jej ruch. Wiatr zmienia się losowo co jakiś czas i wpływa na prędkość oraz możliwość poruszania się żaglówki.
 
-## 2. Założenia Projektu
-## 2.1 Opis działania aplikacji
+
+## 2 Opis działania aplikacji
 Użytkownik steruje żaglówką za pomocą klawiszy:
 Strzałka w lewo – obrót żaglówki w lewo.
 Strzałka w prawo – obrót żaglówki w prawo.
@@ -49,9 +49,14 @@ Aktualizacja pozycji żaglówki
 
 Nowa pozycja obliczana na podstawie wektora ruchu.
 Jeśli przekracza granice ekranu → powrót na środek.
-## 6. Struktura Kodowa
-## 6.1 Pliki i klasy
+
+## 6 Pliki i klasy
 MainPage.xaml – definicja interfejsu użytkownika.
 MainPage.xaml.cs – obsługa zdarzeń i logiki sterowania.
 BoatViewModel.cs – logika ruchu żaglówki (MVVM).
 WindService.cs – losowe generowanie kierunku wiatru.
+
+## 7. Podsumowanie
+Projekt symulacji żaglówki w .NET MAUI pozwala użytkownikowi na interaktywną naukę podstawowych zasad żeglowania. Uwzględnia on zmieniający się wiatr oraz realistyczne zależności między kątem wiatru a prędkością łódki.
+
+Aplikacja może być rozwijana o dodatkowe funkcje, np. różne warunki pogodowe, przeszkody na wodzie, czy system punktacji za efektywne żeglowanie.
