@@ -192,7 +192,6 @@ Aplikacja wykorzystuje technologię .NET MAUI, co pozwala na tworzenie aplikacji
 
 ## 7. Inne uwagi
 - **Modularność:** System powinien być zaprojektowany w sposób umożliwiający łatwą rozbudowę o kolejne moduły.
-- **Dokumentacja API:** Dokumentacja API powinna być dostępna w formacie OpenAPI (Swagger), co umożliwi łatwe testowanie i integrację z zewnętrznymi aplikacjami.
 - **Testowanie:** System powinien być dostosowany do testów jednostkowych, integracyjnych i end-to-end. Wykorzystanie narzędzi takich jak NUnit, xUnit, Selenium, i inne.
   
 ## 8. Plany na przyszłość
