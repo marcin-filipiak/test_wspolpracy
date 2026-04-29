@@ -1,6 +1,6 @@
-# Instrukcja obsługi programu **Pogoda (bez klucza API)**
+# Instrukcja obsługi programu **Pogoda**
 
-Program służy do sprawdzania aktualnej temperatury oraz prędkości wiatru dla wybranego miasta. Dane pogodowe pobierane są z serwisu **wttr.in**, bez konieczności używania klucza API.
+Program służy do sprawdzania aktualnej temperatury oraz prędkości wiatru dla wybranego miasta. Dane pogodowe pobierane są z serwisu **wttr.in**.
 
 Instrukcja poniżej opisuje użycie programu **dla miasta Katowice (Polska)**, zarówno w trybie tekstowym (terminal), jak i graficznym (okno GUI).
 
